@@ -19,6 +19,7 @@ const requiredFiles = [
   "paths/index.path.md",
   "paths/author/course-brief.guide.md",
   "paths/author/semester-setup.guide.md",
+  "paths/author/try-csc-121-starter.guide.md",
   "paths/author/weekly-workflow.guide.md",
   "paths/course/syllabus.guide.md",
   "paths/course/schedule.path.md",
