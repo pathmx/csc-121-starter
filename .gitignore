@@ -1,0 +1,19 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.pathmx*
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.obsidian/
+.vscode/
+.idea/
+
+# Private course operations never belong in the reusable Starter.
+cohorts/
+submissions/
+grades/
+rosters/

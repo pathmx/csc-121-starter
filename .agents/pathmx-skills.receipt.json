@@ -1,0 +1,233 @@
+{
+  "type": "pathmx/official-skills-receipt",
+  "version": 1,
+  "source": {
+    "type": "github",
+    "repository": "pathmx/pathmx-skills",
+    "commit": "36d1f1d4bc8d3849ab1844e4d29136d679383a1c",
+    "contentSha256": "55b693bd8e77de123fb8416ad6713b01e906e5be609d117fe2edee561986abde"
+  },
+  "skills": [
+    {
+      "id": "learn",
+      "files": [
+        {
+          "path": ".agents/skills/learn/SKILL.md",
+          "sha256": "a24c79163a1edd3659ffdb511a916b3facf790f52d0de0cd30ada5d7812d49bc"
+        },
+        {
+          "path": ".agents/skills/learn/agents/openai.yaml",
+          "sha256": "9cb06ea59f42330d8e450305978db1d4a660f4cf642d4bed188406995f66f336"
+        },
+        {
+          "path": ".agents/skills/learn/references/buffered-loop.md",
+          "sha256": "97bfe009b3165ae845aef07f40c926800fbc948baad43449bbbf7b7e1aa9ce2b"
+        }
+      ]
+    },
+    {
+      "id": "pathmx",
+      "files": [
+        {
+          "path": ".agents/skills/pathmx/SKILL.md",
+          "sha256": "981fb7ae6e8d1cbafef963276f32c6cfba99731db61c068b0ac091db6974ffb4"
+        },
+        {
+          "path": ".agents/skills/pathmx/agents/openai.yaml",
+          "sha256": "b2008f93f798cf5dcb212c187d67e5e0d590db16c55f51bca85cfa50e46b2dc1"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/components/feedback-panel.components.md",
+          "sha256": "4472bb8567b2c3aae1d5ff523026db9a5ffdfd5eec089e86d8e65e83c0954ce4"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/examples/learn-sql-foundations/paths/learner.profile.md",
+          "sha256": "b214eed7008a6a8113b5c53ca799c5662ccea8e2dc9ba81559054031dc7da75a"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/examples/learn-sql-foundations/paths/learning.activity.md",
+          "sha256": "957bb11ddb60b442c71a3e2948d117d51925f03ccbf2a1fee8b7ea6ac7ce5950"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/examples/learn-sql-foundations/paths/sql-foundations/index.path.md",
+          "sha256": "7544c6f4878cc03712ebdc26452e8512a5baf6f4b9d397c665a8ab93d73957d9"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/examples/learn-sql-foundations/paths/sql-foundations/modules/01-combine-tables/01-rows-that-survive.lesson.md",
+          "sha256": "3eb8fc6537a9fa6ecb947c770e9624811653fbf5b40406be85af5196567226c8"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/examples/learn-sql-foundations/paths/sql-foundations/modules/01-combine-tables/02-choose-the-join.lesson.md",
+          "sha256": "a9265259469936f570970a0fd7bd3719e9f3c6c3c9cb514011a99fe6f9de2694"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/examples/learn-sql-foundations/paths/sql-foundations/modules/01-combine-tables/index.path.md",
+          "sha256": "28fc9ce1c0c75e07d414bc214f7ed676c4e2cf8a002652573ec7971e5c66722a"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/examples/learn-sql-foundations/paths/sql-foundations/modules/01-combine-tables/milestone.assessment.md",
+          "sha256": "761ec8b99bcc9e7fc4c3ff8240af42d9ba343b64ab8a5877c990294b204f22f0"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/examples/learn-sql-foundations/paths/sql-foundations/modules/01-combine-tables/review.practice.md",
+          "sha256": "e04f04324ea8766d5cc12ea1369eab2e0f239df232fe74a0bb05f228f3d7915b"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/examples/learn-sql-foundations/paths/sql-foundations/path.outcome.md",
+          "sha256": "53fb3c3c3ff9dafc2adba5f1de0cc7344e71fc360944080a692cb268f82a8251"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/examples/shared-components/index.path.md",
+          "sha256": "f0e5bccc1779b6e76ec40e229d3ffe48a895222f0acef14749eaf59b5fe18a13"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/index.md",
+          "sha256": "e58ee7847b2b3d17abcea3abea233097d2905a4c9cbf6b48e4b5e04f3491d188"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/patterns/complete-session-arc.md",
+          "sha256": "7aa2a0be333576b0a5239dfb995d38a3320016dc0d5541086647aa80f324535e"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/learn/module/01-session.lesson.md",
+          "sha256": "6eac19e0bb1e20d34ada29f03b5eb63a070941139ae0d693cf795178c7bdf10d"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/learn/module/02-session.lesson.md",
+          "sha256": "f5bd97a083dbac345e8791f7ec4ea019d9a3904e928b35e91a9eb8eb89e8267f"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/learn/module/index.path.md",
+          "sha256": "e6d6a3bc9b8cbe8b7c277654951e4b903a21471b57baf70261b842997aa1b585"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/learn/module/milestone.assessment.md",
+          "sha256": "b426e0ef3953abd9a1b839c96caa03fbaffcb440f5de5e00775d28f7bfd5818c"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/learn/module/review.practice.md",
+          "sha256": "96de265a56ea08255f537e62c268870588be97c88ca139120e4766ffd8c79041"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/learn/path/index.path.md",
+          "sha256": "7acefc7a72883e20aeeb425fc06cf6abd24dd573d567ff30e469f381beb3dcdb"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/teach/module/01-session.lesson.md",
+          "sha256": "a311dbc4be74bf68b8a4467755cc4f6b2e959f42e301dfbd19db127c42b0f4d9"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/teach/module/02-session.lesson.md",
+          "sha256": "b7e21fa9d24dd418491b52060c198277d7749e81169ddb02d9a16271ce1f571f"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/teach/module/index.path.md",
+          "sha256": "b482f42f87cd96bad75d534f858f6d322391e1274e9f96d2d6fad78e6c63902e"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/teach/module/module.assessment.md",
+          "sha256": "7970ca1a1ae9d1e23d1d661f859bc4937f3d877201e9c3c1904290cbac43e9b3"
+        },
+        {
+          "path": ".agents/skills/pathmx/library/templates/teach/path/index.path.md",
+          "sha256": "995f070f3820dc136ff46f572cde9bd5859b9dbc4e3875efb583ca022174d3f3"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/assets/pathmx-flip-note.components.md",
+          "sha256": "6e270000c1bca1ede4ab4cd148fc47e0c192a39f954f0bab7386e0d08a18cb52"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/assets/pathmx-styling-example.css",
+          "sha256": "1b8313bed236e8576e24604bac96b8f290a924a6f122e8f1b158ea184d79f39e"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-annotations.md",
+          "sha256": "7e746f5670d86938ee72d0e1dad7521fbdbca12ab051291e58c9ba83b63ae6a5"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-code.md",
+          "sha256": "d3149248320cd2c2998b9ef3fafdf62c1e5d7cf14e280caac049fae670400d24"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-config.md",
+          "sha256": "f90b902f161cd3d969283e3fa5bc8f18925e0b2819ac3c374989ae6e83a35b98"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-directives.md",
+          "sha256": "64f688a49be78a84bce1149f9d64a36f1f49cedbe831cb91ab6cc6151d8eac71"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-icons.md",
+          "sha256": "42f00e13dc6646bf620bb97239d1fd174a1ed473ab9515fa2abb26ca3f7ed68d"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-literate-components.md",
+          "sha256": "c9a7f381b34753f6e89991990cd050f52ee0c96666d9df5f548b4f8ff8ffa452"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-markdown.md",
+          "sha256": "b05621a3e61319af5dab76c6643d19cae760b49ae8618a8ff264b94cd2820dee"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-math.md",
+          "sha256": "6e360d7b7c5217954c3ee72c1c15dea9e0772dfcfb8951d7803237556c70469d"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-media.md",
+          "sha256": "30526295ef07900c2985b74b4d59a2bc0dcab304186f7c6437ba6e6638849b05"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-player.md",
+          "sha256": "bd23de9d13d834d5738a963c8a1ecd67f86ec59ef8f3f4635fffd20f72ecd567"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-questions.md",
+          "sha256": "a6d58653c6ce995e54cb203c143d64b819d18bcdfab729ea93ac00767172d993"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-repo-example/pathmx-repository.md",
+          "sha256": "43b18a21a1ebcf9efbcba987b803e093e458f6c8359c2f0b6a0a45e035720a22"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-repo-example/paths/index.path.md",
+          "sha256": "91af05e1072aae6a65ff5099a57957e6aeb579c370b77bc1167e400a2639462d"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-repo-example/paths/lessons/code-with-agents.lesson.md",
+          "sha256": "9638d05f1012e75c1b3fc79cc8c5823ef3fce4942fb99c923148afc6ab1e0f52"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-styling.md",
+          "sha256": "0731b18fe3454f6b7c8f676cd06eb980e288dc9da3959477e0695a8e0491e467"
+        },
+        {
+          "path": ".agents/skills/pathmx/references/pathmx-tooling.md",
+          "sha256": "5da025ba186226688f91325ab84a5fdbbe4edb6ae52e530fc81140c89c314ecf"
+        }
+      ]
+    },
+    {
+      "id": "teach",
+      "files": [
+        {
+          "path": ".agents/skills/teach/SKILL.md",
+          "sha256": "5a24e50dcb617de2db012448acb1dda860f010350422cd6fa593b3ddcd90d719"
+        },
+        {
+          "path": ".agents/skills/teach/agents/openai.yaml",
+          "sha256": "1f822126b3d2546d8c6deb730af6bda97e024e43b840e98f025bbdc9952fff31"
+        },
+        {
+          "path": ".agents/skills/teach/references/shared-path-contract.md",
+          "sha256": "05e8ac50aa5eb22663dca2623414129a6e8cc4a6ba9bf36e490b4b97551e95f4"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "path": ".claude/skills",
+      "target": "../.agents/skills"
+    }
+  ]
+}

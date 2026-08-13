@@ -1,0 +1,10 @@
+:root {
+  --csc-callout: color-mix(in oklch, var(--pathmx-color-accent) 10%, transparent);
+}
+
+.csc-checkpoint {
+  border-left: 0.25rem solid var(--pathmx-color-accent);
+  background: var(--csc-callout);
+  padding: 1rem 1.1rem;
+  border-radius: 0.25rem var(--pathmx-shape-radius) var(--pathmx-shape-radius) 0.25rem;
+}
