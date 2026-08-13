@@ -30,8 +30,8 @@ as plain files in a repository. That makes it possible to:
   remains the author and final reviewer.
 
 You can adopt those benefits gradually. A useful first session needs only an
-editor, Bun, a few Markdown files, and the local Player. Git, remote publishing,
-and agent-assisted authoring can follow when they are useful.
+editor, the PathMX CLI, a few Markdown files, and the local Player. Git, remote
+publishing, and agent-assisted authoring can follow when they are useful.
 
 ---
 
@@ -77,11 +77,13 @@ because its Live Preview shows formatted headings, links, lists, and emphasis
 while you edit the underlying Markdown. VS Code is useful when you later want
 Git and code in the same workspace.
 
-**Bun:** Bun is the runtime and package manager used to install and run PathMX.
-It fills a role similar to Node.js plus npm. In this repository,
-`bun install` installs the pinned PathMX version and `bun run play:open` starts
-the local course website. Students do not need Bun merely to read a published
-course or write early Python in Thonny.
+**Bun:** Bun is currently needed to install and run the PathMX CLI. Install Bun
+and then install PathMX once with
+`bun add --global @fellowhumans/pathmx@0.3.0`. This lab uses a verified CLI
+release rather than a repository package setup. After that, use direct commands
+such as `pathmx play --open`; this repository has no Bun package setup or
+package scripts. Students do not need Bun merely to read a published course or
+write early Python in Thonny. PathMX may later ship as a standalone executable.
 
 **Git:** Git records versions of the files and helps move the course between
 computers or collaborators. It is valuable, but it does not have to be part of

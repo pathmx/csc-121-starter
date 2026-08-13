@@ -33,16 +33,32 @@ Inspect `git status --short` when Git is available. Preserve all existing work.
 
 ## Verify the workspace
 
-Check for Bun. If it is absent, explain that Bun is the runtime and package
-manager that runs PathMX, give the official installation page, and continue the
-read-only orientation. Do not run a remote installation script.
+Check for the `pathmx` command first. If it is absent, check for Bun. Explain
+that Bun is only the current CLI installation/runtime prerequisite. If Bun is
+also absent, give the official Bun installation page and continue the read-only
+orientation; do not run a remote installation script.
 
-When Bun is available:
+When Bun exists but `pathmx` does not, ask before installing software. With
+approval, run:
 
-1. Run `bun install --frozen-lockfile`.
-2. Run `bun run onboard`.
-3. Summarize tool readiness, the pinned PathMX version, the 11-Source learner
-   graph, and any concrete failure in plain language.
+```sh
+bun add --global @fellowhumans/pathmx@0.3.0
+```
+
+This installs the CLI release verified for this lab. When `pathmx` is
+available:
+
+1. Run `pathmx --version`.
+2. Build `paths/index.path.md` with `pathmx build` into a fresh temporary output
+   directory outside the repository.
+3. Wait for a successful exit and confirm the build identifies the expected
+   learner Root.
+4. Remove only the temporary output created for this verification.
+5. Summarize readiness, the CLI version, and any concrete failure in plain
+   language.
+
+Do not create a package manifest, install repository dependencies, or add Bun
+scripts. Course operations use the direct `pathmx` CLI.
 
 Git and a separate system Python installation are optional for this lab. Thonny
 can provide the early student Python experience.
@@ -50,7 +66,7 @@ can provide the early student Python experience.
 ## Start and verify Player
 
 Reuse an existing Player only after confirming it belongs to this checkout.
-Otherwise start the long-running `bun run play:open` command and keep it running
+Otherwise start the long-running `pathmx play --open` command and keep it running
 for the instructor. Do not stop an unknown process to take its port.
 
 Use the printed local URL. Open it with an integrated browser when available;
@@ -70,7 +86,8 @@ Explain the repository through the visible example:
   teaching intent.
 - Instructor notes, templates, and unlinked drafts remain outside learner
   navigation.
-- Bun runs PathMX; students do not need Bun to visit a shared course.
+- Bun currently installs and runs the CLI; normal authoring uses `pathmx`
+  directly, and students do not need either tool to visit a shared course.
 - Obsidian Live Preview is an approachable Markdown editor; VS Code can become
   useful later when Git and project code matter.
 

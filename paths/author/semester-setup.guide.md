@@ -15,8 +15,8 @@ one private working course and one small release.
    useful when code and Git become part of the work.
 4. Edit the [small course brief](./course-brief.guide.md).
 5. Adapt `paths/index.path.md` and either revise or replace the example week.
-6. Preview locally with `bun run play:open`.
-7. Run `bun run check`.
+6. Verify the course with `pathmx build paths/index.path.md`.
+7. Preview locally with `pathmx play --open`.
 8. Publish only the material you have reviewed.
 
 Keep the LMS authoritative for rosters, grades, accommodations, formal policy,

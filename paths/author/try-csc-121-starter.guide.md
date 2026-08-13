@@ -37,9 +37,9 @@ material. Git, VS Code, and Codespaces can arrive later for project-based work.
 Install [Bun](https://bun.sh/docs/installation), then run:
 
 ```sh
-bunx @fellowhumans/pathmx init csc-121 --template csc-121-starter
+bun add --global @fellowhumans/pathmx@0.3.0
+pathmx init csc-121 --template csc-121-starter
 cd csc-121
-bun install --frozen-lockfile
 ```
 
 The current PathMX template command supports public template repositories in
@@ -67,7 +67,7 @@ From the new repository, start Codex or Claude Code and say:
 
 > Onboard me and lead the short PathMX authoring lab.
 
-The agent will verify the pinned tools, run the Player, explain the small
+The agent will verify the PathMX CLI, run the Player, explain the small
 vocabulary, and guide one local prototype. It will ask before connecting a
 draft or publishing a public link.
 
@@ -80,13 +80,16 @@ experience while preserving the plain Markdown files PathMX uses.
 ## Core commands
 
 ```sh
-bun run onboard     # verify this Starter
-bun run play:open   # open the local course website
-bun run check       # check links, examples, and the learner graph
+pathmx --version                       # confirm the CLI is available
+pathmx build paths/index.path.md       # verify the learner course
+pathmx play --open                     # open the local course website
 ```
 
-Bun is the runtime and package manager used by the repository, similar to
-using Node.js and npm together. Students do not need Bun to read the site.
+Bun is currently the installation and runtime prerequisite for the PathMX CLI.
+Once the CLI is installed, use `pathmx` directly; the course repository has no
+Bun package setup. The lab currently uses PathMX 0.3.0 because it is verified
+with the Share service. Students do not need Bun to read the site. PathMX may
+later ship as a standalone executable.
 
 ---
 

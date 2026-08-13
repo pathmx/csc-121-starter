@@ -21,13 +21,15 @@ fallback and a reference.
 ## 1. Start the course website
 
 ```sh
-bun install --frozen-lockfile
-bun run onboard
-bun run play:open
+pathmx --version
+pathmx build paths/index.path.md
+pathmx play --open
 ```
 
-Leave the last command running. It prints and opens a local URL. Confirm that
-the Player shows **CSC-121 Course Site** and an example week.
+If `pathmx` is not installed, first install Bun and run
+`bun add --global @fellowhumans/pathmx@0.3.0`. Leave the last command running.
+It prints and opens a local URL. Confirm that the Player shows **CSC-121 Course
+Site** and an example week.
 
 ---
 

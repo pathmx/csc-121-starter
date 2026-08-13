@@ -72,10 +72,15 @@ feedback, or answer keys intended to remain restricted.
 
 ## Verify proportionately
 
-Inspect `git diff --check` and run `bun run check`. For a new unlinked draft,
-build its named entry Source into a disposable output directory so its own graph
-and rendering are checked. Use the local Player route when visual pacing or
-navigation matters. Remove only scratch output created during this task.
+Inspect `git diff --check`. For a new unlinked draft, run `pathmx build` with
+its named entry Source and a fresh temporary output directory outside the
+repository so its graph and rendering are checked. For a learner-navigation
+change, build `paths/index.path.md` the same way. Use `pathmx play` and the local
+Player route when visual pacing or navigation matters. Remove only temporary
+output created during this task.
+
+Use the direct `pathmx` CLI. Do not add a package manifest or Bun script merely
+to wrap a PathMX command.
 
 Report what was actually verified. A successful command launch is not a Player
 or build result.
@@ -85,13 +90,14 @@ or build result.
 Ask before linking a draft into learner navigation. After approval:
 
 1. add the smallest meaningful link from the intended Source;
-2. rerun `bun run check`;
+2. rebuild `paths/index.path.md` with `pathmx build`;
 3. inspect the course in Player; and
 4. report the learner-facing route.
 
 Public Share is a separate external mutation. Ask explicitly before running it.
 Read `operations/sharing.guide.md`, ensure the ignored environment has
-`PATHMX_SHARE_TOKEN`, never print the token, run `bun run share:course`, and
+`PATHMX_SHARE_TOKEN`, never print the token, run
+`pathmx share paths/index.path.md`, and
 verify the returned public page. The instructor remains the final publisher.
 
 ## Close the authoring pass

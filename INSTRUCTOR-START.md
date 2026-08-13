@@ -16,8 +16,8 @@ claude "Onboard me and lead the short PathMX authoring lab."
 The agent should:
 
 1. explain what Bun and PathMX do in plain language;
-2. install the locked dependencies if needed;
-3. run the repository check;
+2. confirm that the `pathmx` CLI is available and help install it if needed;
+3. build the learner course directly with PathMX;
 4. open and verify the learner course in PathMX Player;
 5. connect one Markdown Source to what you see in the Player;
 6. introduce Sources, links, Blocks, Beats, View mode, and Play mode;
@@ -33,10 +33,14 @@ loop.
 [Install Bun](https://bun.sh/docs/installation), then run:
 
 ```sh
-bun install --frozen-lockfile
-bun run onboard
-bun run play:open
+bun add --global @fellowhumans/pathmx@0.3.0
+pathmx --version
+pathmx build paths/index.path.md
+pathmx play --open
 ```
+
+Bun is needed to install the current CLI. Once `pathmx` is available, use the
+PathMX commands directly.
 
 Open `paths/index.path.md` in any text or Markdown editor while the Player is
 running. Change one sentence, save it, and reload or wait for the Player to

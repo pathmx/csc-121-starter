@@ -32,7 +32,8 @@ the instructor approves its learning shape and learner-facing placement.
 2. Use the installed `teach` skill for shared-learning decisions.
 3. Use the installed `pathmx` skill for Markdown, graph, Player, and Share work.
 4. Inspect `git status --short` and preserve unrelated work.
-5. Run `bun run check` before handoff.
+5. Build the changed learner Root or named draft directly with `pathmx build`
+   before handoff.
 
 ## Starter boundaries
 
@@ -56,10 +57,14 @@ the instructor approves its learning shape and learner-facing placement.
   private feedback, or downloaded student repositories.
 - Instructor agent use does not change student AI permissions.
 
-## PathMX version safety
+## PathMX CLI safety
 
-- The exact dependency and lockfile define valid syntax.
-- Do not upgrade PathMX as part of ordinary curriculum authoring.
+- Use the installed `pathmx` command for course operations. Do not introduce
+  package scripts that merely wrap it.
+- Bun is only the installation/runtime prerequisite for the current CLI
+  distribution; this repository is not a Bun package project.
+- Do not update the global PathMX installation as part of ordinary curriculum
+  authoring.
 - Do not hand-edit the official `learn`, `pathmx`, or `teach` skills; refresh
   them with `pathmx init --skills`.
 - Preserve the repository-owned onboarding and prototyping skills during an

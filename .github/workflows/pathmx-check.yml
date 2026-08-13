@@ -16,5 +16,7 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-      - run: bun install --frozen-lockfile
-      - run: bun run check
+      - name: Install PathMX CLI
+        run: bun add --global @fellowhumans/pathmx@0.3.0
+      - name: Build the learner course
+        run: pathmx build paths/index.path.md -o .pathmx-check --clean

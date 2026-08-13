@@ -10,7 +10,7 @@ Local preview and public sharing are separate decisions.
 ## Local Player
 
 ```sh
-bun run play:open
+pathmx play --open
 ```
 
 This builds and serves the course on your computer. It is the right place to
@@ -33,7 +33,7 @@ PATHMX_SHARE_TOKEN=your-token-here
 Never commit or paste the token into a prompt. Then run:
 
 ```sh
-bun run share:course
+pathmx share paths/index.path.md
 ```
 
 Open the returned URL and verify the title, current example or course material,

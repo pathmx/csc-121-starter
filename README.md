@@ -42,20 +42,25 @@ PathMX treats curriculum as a collection of ordinary Markdown files:
 - repository-aware agents can inspect the same curriculum, prototype material,
   check alignment, and prepare a reviewable preview.
 
-PathMX is still a work in progress. This Starter pins the version it has
-actually verified, keeps the LMS as the authority for official records, and
-avoids making experimental features necessary for the course to function.
+PathMX is still a work in progress. This Starter keeps the LMS as the authority
+for official records and avoids making experimental features necessary for the
+course to function.
 
 ## A note about Bun
 
-[Bun](https://bun.sh/docs) is the small command-line runtime and package manager
-used to install and run PathMX. In this repository:
+[Bun](https://bun.sh/docs) is the small command-line runtime used by the current
+PathMX CLI distribution. Install Bun once, then install PathMX:
 
-- `bun install --frozen-lockfile` installs the verified PathMX version;
-- `bun run play:open` opens the local course website;
-- `bun run check` checks links, example files, and the built learner graph; and
-- `bun run share:course` updates a public course snapshot when Share access is
-  configured.
+```sh
+bun add --global @fellowhumans/pathmx@0.3.0
+pathmx --version
+```
+
+After that, the normal course commands are simply `pathmx init`,
+`pathmx play --open`, `pathmx build`, and `pathmx share`. You do not need to
+manage a Bun project or learn package scripts. The lab currently uses PathMX
+0.3.0 because that release is verified with its Share service. A future PathMX
+release may ship as a standalone executable and remove the Bun prerequisite.
 
 Students do not need Bun to visit a published course site.
 
@@ -91,13 +96,12 @@ it.
 
 ## Public template, private working course
 
-The canonical Starter remains public because PathMX `0.3.0` only initializes
-public GitHub Template repositories in the `pathmx` organization. The command
-does not use local Git credentials to read a private template:
+The canonical Starter remains public because the current PathMX template
+command initializes public GitHub Template repositories in the `pathmx`
+organization. It does not use local Git credentials to read a private template:
 
 ```sh
-bunx @fellowhumans/pathmx init my-csc-121 \
-  --template csc-121-starter
+pathmx init my-csc-121 --template csc-121-starter
 ```
 
 After initialization, the instructor can put `my-csc-121` in a new private

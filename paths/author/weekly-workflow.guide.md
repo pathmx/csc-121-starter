@@ -13,7 +13,7 @@ Use this loop for a lecture, lab, assignment, or complete teaching week.
 3. Draft in `paths/drafts/` so the work is not yet in learner navigation.
 4. Review the journey: preparation, instructions, time, recovery help, finish,
    and accessibility.
-5. Preview the draft in Player and run `bun run check`.
+5. Build the named draft with `pathmx build`, then preview it in Player.
 6. Link the Source into the course only after instructor approval.
 7. Share the reviewed course snapshot when learners need it.
 8. After teaching, record the smallest useful revision for next time.
