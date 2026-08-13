@@ -56,3 +56,9 @@ private term information during the initial tour without explicit approval.
   refresh them with `pathmx init --skills`.
 - `onboard-csc-121-instructor` is repository-owned and must remain intact when
   the official skills are refreshed.
+- The canonical public template must not track
+  `.agents/pathmx-skills.receipt.json`. PathMX reserves that receipt for each
+  newly initialized workspace. When maintaining the canonical template,
+  refresh official skills with `pathmx init --skills --force`, review the
+  managed skill changes, remove the generated receipt before committing, and
+  run `bun run check`.

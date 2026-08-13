@@ -25,8 +25,10 @@ To resume later, say:
 ## Install or refresh the managed skills
 
 The Starter already contains the official `teach`, `pathmx`, and `learn`
-skills under `.agents/skills/`. Their exact source revision is recorded in
-`.agents/pathmx-skills.receipt.json`.
+skills under `.agents/skills/`. A workspace created with `pathmx init` records
+their exact source revision in `.agents/pathmx-skills.receipt.json`. The
+canonical public template intentionally omits that reserved, workspace-local
+receipt so PathMX can create it during initialization.
 
 After cloning, no global agent package is required. To refresh those managed
 files deliberately, run the repository-pinned PathMX command:
@@ -41,6 +43,12 @@ bun run check
 Review and commit the skill update as its own change. Do not hand-edit managed
 skill files. A skill refresh changes agent guidance; it does not publish the
 course or create remote repositories.
+
+Maintainers refreshing the canonical `pathmx/csc-121-starter` repository must
+use `bunx pathmx init --skills --force`, preserve the course-owned onboarding
+skill, and remove the generated `.agents/pathmx-skills.receipt.json` before
+committing. That file belongs in initialized course workspaces, not in the
+template archive.
 
 ## Initial setup
 

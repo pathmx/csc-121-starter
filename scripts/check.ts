@@ -92,6 +92,24 @@ async function assertRepositoryShape() {
     throw new Error("package.json must preserve the instructor onboarding commands")
   }
 
+  const origin = Bun.spawnSync(["git", "remote", "get-url", "origin"], {
+    cwd: root,
+    stdin: "ignore",
+    stdout: "pipe",
+    stderr: "ignore",
+  })
+  const originUrl = origin.exitCode === 0 ? origin.stdout.toString().trim() : ""
+  if (
+    /github\.com[/:]pathmx\/csc-121-starter(?:\.git)?$/i.test(originUrl) &&
+    (await Bun.file(
+      path.join(root, ".agents/pathmx-skills.receipt.json"),
+    ).exists())
+  ) {
+    throw new Error(
+      "The canonical public template must not track PathMX's workspace receipt",
+    )
+  }
+
   const config = await read("paths/config/index.config.md")
   const configuredPaths = [
     ...config.matchAll(/\]\((\.\.\/[^)]+\.md)\)/g),
