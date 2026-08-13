@@ -3,6 +3,25 @@
 Coding agents are optional collaborators. The course remains operable with an
 editor, terminal, GitHub, PathMX, and the instructor's own judgment.
 
+## First session
+
+From the repository root, start either supported agent with the onboarding
+request:
+
+```sh
+codex "Onboard me as the CSC-121 instructor."
+claude "Onboard me as the CSC-121 instructor."
+```
+
+Both discover the repository-owned `onboard-csc-121-instructor` skill through
+`.agents/skills` and `.claude/skills`. The agent should run the preflight and
+full check, keep Player running, verify the course home, explain the readiness
+boundary, and ask first whether this is a tour or a private term setup.
+
+To resume later, say:
+
+> Continue instructor setup.
+
 ## Install or refresh the managed skills
 
 The Starter already contains the official `teach`, `pathmx`, and `learn`

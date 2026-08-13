@@ -4,6 +4,18 @@ This repository is a reusable course baseline for multiple learners. Keep it
 calm enough that a technically capable instructor who is new to PathMX can
 understand and operate it without reverse-engineering hidden automation.
 
+## Instructor onboarding trigger
+
+When an instructor begins with a broad request such as “start,” “onboard me,”
+“show me around,” “help me set this up,” or “what should I do first,” use the
+installed `onboard-csc-121-instructor` skill. Lead the setup proactively: run
+the safe local preflight and course check, start and verify Player, explain the
+honest readiness boundary, and guide one decision at a time. Do not require the
+instructor to know the skill name or repository structure.
+
+Do not deploy, create remote repositories, edit course content, or collect
+private term information during the initial tour without explicit approval.
+
 ## Before changing the course
 
 1. Read `README.md`, `paths/author/course-brief.guide.md`, and the nearest unit
@@ -40,5 +52,7 @@ understand and operate it without reverse-engineering hidden automation.
 - The exact dependency and lockfile define valid syntax.
 - Test an update in a clean commit, run `bun run check`, and inspect the exact
   Player route before changing `pathmxCompatibility.baseline`.
-- Do not edit managed files under `.agents/skills`; refresh them with
-  `pathmx init --skills`.
+- Do not edit the official `learn`, `pathmx`, or `teach` skill directories;
+  refresh them with `pathmx init --skills`.
+- `onboard-csc-121-instructor` is repository-owned and must remain intact when
+  the official skills are refreshed.

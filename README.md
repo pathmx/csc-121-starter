@@ -12,12 +12,27 @@ as finished lessons.
 
 ## Start here
 
+For a guided instructor setup, open a terminal in this repository and run one
+of these:
+
+```sh
+codex "Onboard me as the CSC-121 instructor."
+claude "Onboard me as the CSC-121 instructor."
+```
+
+The agent will check the workspace, run the course verification, start Player,
+show the learner experience, explain what is ready, and guide one setup choice
+at a time. See [Start here, instructor](./INSTRUCTOR-START.md) for the complete
+contract and manual fallback.
+
+Without an agent:
+
 1. Install [Bun](https://bun.sh/) and clone this repository.
-2. Run the verified local setup:
+2. Run the verified setup:
 
    ```sh
    bun install --frozen-lockfile
-   bun run check
+   bun run onboard
    bun run play:open
    ```
 
@@ -45,7 +60,9 @@ The learner home is `paths/index.path.md`. Instructor-only material is under
 - `assignment-templates/` — sanitized starter repositories for practice,
   projects, exams, and the final project.
 - `operations/` — Classroom 50, plain GitHub, deployment, and agent workflows.
-- `.agents/skills/` — managed PathMX authoring and teaching skills.
+- `.agents/skills/` — official PathMX skills plus the course-owned instructor
+  onboarding skill.
+- `INSTRUCTOR-START.md` — one-command Codex or Claude Code onboarding.
 - `.github/workflows/` — clean verification and an explicit manual deploy.
 - `scripts/check.ts` — repository hygiene plus a clean PathMX build check.
 

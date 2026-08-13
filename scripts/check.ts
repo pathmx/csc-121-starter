@@ -10,7 +10,10 @@ const binary = path.join(root, "node_modules", ".bin", "pathmx")
 
 const requiredFiles = [
   "AGENTS.md",
+  "INSTRUCTOR-START.md",
   "README.md",
+  ".agents/skills/onboard-csc-121-instructor/SKILL.md",
+  ".agents/skills/onboard-csc-121-instructor/agents/openai.yaml",
   "paths/config/index.config.md",
   "paths/index.path.md",
   "paths/author/course-brief.guide.md",
@@ -42,6 +45,7 @@ const requiredFiles = [
   "operations/plain-github-fallback.guide.md",
   "operations/deployment.guide.md",
   "operations/agent-workflows.guide.md",
+  "scripts/instructor-onboarding.ts",
 ] as const
 
 const forbiddenLegacyPatterns = [
@@ -78,6 +82,13 @@ async function assertRepositoryShape() {
     throw new Error(
       `Installed PathMX ${installedPackage.version} differs from baseline ${baseline}`,
     )
+  }
+  if (
+    packageJson.scripts?.["onboard:preflight"] !==
+      "bun run scripts/instructor-onboarding.ts" ||
+    packageJson.scripts?.onboard !== "bun run onboard:preflight && bun run check"
+  ) {
+    throw new Error("package.json must preserve the instructor onboarding commands")
   }
 
   const config = await read("paths/config/index.config.md")

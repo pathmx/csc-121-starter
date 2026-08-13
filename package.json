@@ -8,6 +8,8 @@
     "updatePolicy": "exact-after-verification"
   },
   "scripts": {
+    "onboard:preflight": "bun run scripts/instructor-onboarding.ts",
+    "onboard": "bun run onboard:preflight && bun run check",
     "play": "pathmx play --print-url",
     "play:open": "pathmx play --print-url --open",
     "build": "pathmx build --clean",
