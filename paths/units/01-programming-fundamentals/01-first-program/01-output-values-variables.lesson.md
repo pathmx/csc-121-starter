@@ -18,11 +18,8 @@ print("second")
 print("third")
 ```
 
-Before running it, predict the output. Then use:
-
-```sh
-python main.py
-```
+Before running it, predict the output. Save it as `main.py`, then press **F5**
+in Thonny.
 
 Python reads these instructions from top to bottom. Changing their order
 changes the output.

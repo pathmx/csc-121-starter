@@ -5,7 +5,8 @@
 - [ ] its capability and entry assumptions are explicit;
 - [ ] the lecture contains a runnable worked example;
 - [ ] the lab provides a supported attempt and an independent challenge;
-- [ ] the project asks for observable evidence of the capability;
+- [ ] the application or project asks for observable evidence of the
+      capability;
 - [ ] a self-check, rubric, or answer rationale is available;
 - [ ] setup, submission, recovery, and next steps are exact;
 - [ ] the starter code was run from a clean copy;

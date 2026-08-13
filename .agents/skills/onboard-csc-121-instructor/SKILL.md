@@ -64,9 +64,12 @@ Orient the instructor to four things, without dumping the whole repository:
 1. The learner sees one course Root and a 15-week journey.
 2. Weeks 1 and 2 are pilot-ready; Weeks 3–15 are concrete maps that still need
    instructor preparation.
-3. `paths/author/` owns the course brief, setup, facilitation, and readiness
+3. The first unit uses the PathMX course website, Thonny, LMS file submission,
+   a no-AI policy, and paper exams. Codespaces, Git, and optional agent-assisted
+   project work arrive later.
+4. `paths/author/` owns the course brief, setup, facilitation, and readiness
    guidance outside learner navigation.
-4. `assignment-templates/` and `operations/` keep assignment distribution,
+5. `assignment-templates/` and `operations/` keep assignment distribution,
    deployment, and agents replaceable rather than embedded in the curriculum.
 
 Open or link the course home, Week 1, the course brief, and semester checklist.
@@ -88,11 +91,12 @@ contact details, course URLs, or institutional policy.
 Then guide these decisions in order, one short question at a time:
 
 1. term, first meeting, and weekly meeting pattern;
-2. supported Python/editor environment and learner recovery option;
-3. assignment distribution pilot: Classroom 50 or plain GitHub;
+2. Thonny installation and the early LMS file-submission loop;
+3. no-AI foundations language and pencil-and-paper exam conditions;
 4. institution-approved syllabus, accessibility, integrity, and LMS details;
 5. the next release slice, normally Weeks 3–5;
-6. deployment only after the local teaching loop is proven.
+6. later Codespaces and GitHub project pilot;
+7. deployment only after the local teaching loop is proven.
 
 Recommend a choice when the repository provides a baseline, explain its
 tradeoff briefly, and let the instructor decide. Ask before editing files.

@@ -15,9 +15,10 @@ Change one concern without silently rewriting the others.
 - the problem → plan → code → test → explain loop;
 - weekly lecture, lab, project, and feedback rhythm;
 - two units of increasingly independent programming;
-- controlled transfer assessments;
+- a simple Thonny-first foundations experience;
+- pencil-and-paper transfer assessments;
 - final project specification, incremental checkpoints, and demo;
-- the staged AI policy.
+- the no-AI foundations policy and explicit later permissions.
 
 ## Safe places to make the course your own
 
@@ -26,7 +27,11 @@ Change one concern without silently rewriting the others.
 - project themes and datasets;
 - optional stretch goals;
 - local meeting pattern and grade weights;
-- supported editor or development environment.
+- later project domain and Codespaces details.
+
+Changing the foundations editor is a larger course decision: preserve the
+single-window edit/run loop and do not accidentally make a terminal, account,
+or repository an entry requirement.
 
 ## Before changing the sequence
 

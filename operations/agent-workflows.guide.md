@@ -1,7 +1,9 @@
 # Agent workflows for the instructor
 
 Coding agents are optional collaborators. The course remains operable with an
-editor, terminal, GitHub, PathMX, and the instructor's own judgment.
+ordinary editor, PathMX course website, LMS, and the instructor's own judgment.
+GitHub and a terminal enter only with later project work. Instructor agent use
+does not imply that student AI use is permitted.
 
 ## First session
 
@@ -66,7 +68,8 @@ Useful first request:
 > Use the Week template and the existing course brief to prepare Week 3 on
 > loops and state. Preserve the stated Unit 1 evidence. First show me the
 > capability, worked example, lab, project, self-check, and any decision you
-> need from me. Do not publish or create assignment repositories.
+> need from me. Keep the work in Thonny, preserve the no-AI policy, and do not
+> publish or create assignment repositories.
 
 The instructor reviews learning goals, factual correctness, examples, policy,
 and final presentation. The agent may help with structure, consistency,
@@ -81,7 +84,11 @@ PathMX syntax, code fixtures, and verification.
 
 ## Prepare assignment evidence
 
-In a private term repository, an agent may:
+Only use an agent with student work when the institution has approved the
+service and data boundary. Otherwise use synthetic fixtures and keep the
+review manual. Within an approved private term workspace, an agent may run a
+de-identified copy of an early `.py` submission, compare observable behavior
+with a rubric, and draft feedback. For later repository projects, it may:
 
 - clone the intended assignment repositories with existing credentials;
 - run documented commands in a safe fixture environment;

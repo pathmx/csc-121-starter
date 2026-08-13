@@ -1,12 +1,14 @@
 # Plain GitHub assignment fallback
 
-The course can operate without a classroom product. This route is more manual
-but uses ordinary GitHub repositories and keeps the curriculum independent of
-one service.
+The later project units can operate without a classroom product. This route is
+more manual but uses ordinary GitHub repositories and keeps the curriculum
+independent of one service. The Thonny foundations unit should continue using
+the simpler LMS file workflow.
 
 ## Create starter repositories
 
-For each directory under `assignment-templates/` that you plan to use:
+For each later project directory under `assignment-templates/` that you plan
+to use:
 
 1. copy it into a clean temporary folder;
 2. initialize Git;
@@ -14,13 +16,13 @@ For each directory under `assignment-templates/` that you plan to use:
 4. create a private repository in the course organization;
 5. optionally mark it as a template repository in GitHub settings.
 
-Example after copying the practice template:
+Example after copying the Unit 2 project template:
 
 ```sh
 git init
 git add .
-git commit -m "Create CSC-121 practice starter"
-gh repo create COURSE_ORG/csc-121-practice-starter --private --source=. --push
+git commit -m "Create CSC-121 applied project starter"
+gh repo create COURSE_ORG/csc-121-applied-starter --private --source=. --push
 ```
 
 Replace `COURSE_ORG` explicitly. Do not paste a command containing a real
@@ -39,8 +41,7 @@ The lowest-complexity manual options are:
 Use a documented naming convention such as:
 
 ```text
-csc-121-practice-GITHUB_USERNAME
-csc-121-unit-1-GITHUB_USERNAME
+csc-121-applied-GITHUB_USERNAME
 csc-121-final-GITHUB_USERNAME
 ```
 

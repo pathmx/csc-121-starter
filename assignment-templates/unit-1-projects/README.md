@@ -1,19 +1,16 @@
-# CSC-121 Unit 1 projects
+# CSC-121 Unit 1 application files
 
-This repository holds the small independent projects from Unit 1. Work only in
-the folder named by the current course Path.
+This folder holds the small independent applications from Unit 1. The
+instructor may distribute individual files or a zip through the LMS; students
+do not need GitHub for this unit. Work only in the folder named by the current
+course Path.
 
-## Projects
+## Applications
 
 - `projects/01-me/me.py` — static profile card.
 - `projects/02-you/you.py` — interactive profile card.
 - Later project folders are added when the corresponding week is ready.
 
-Run a project from the repository root, for example:
-
-```sh
-python projects/01-me/me.py
-```
-
-Commit after each working phase. Before a deadline, push and inspect the latest
-commit on GitHub.
+Open the assigned file in Thonny and press **F5**. Save after each working
+phase. Before a deadline, upload the exact `.py` file through the stated
+submission channel and inspect the submitted copy.

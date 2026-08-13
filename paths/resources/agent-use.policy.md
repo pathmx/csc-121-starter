@@ -3,6 +3,10 @@
 A coding agent can inspect and edit a repository. That makes it more useful—and
 more consequential—than a chat window that only sees pasted code.
 
+This guide applies only after your instructor explicitly permits agent use for
+the current unit and assignment. The foundations unit and paper exams do not
+permit generative AI.
+
 ## Before using one
 
 - Check the permission for the current unit and assignment.

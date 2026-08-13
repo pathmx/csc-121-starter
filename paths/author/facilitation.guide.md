@@ -6,6 +6,12 @@ Programming is learned by making predictions, running code, observing the
 result, and revising. Explanation matters, but it should lead quickly back to
 student action.
 
+Manual typing is purposeful practice in the foundations unit. The physical and
+mental loop of seeing, typing, running, and correcting code helps learners form
+reliable program patterns, much as scales build musical fluency or repeated
+movement builds physical coordination. Keep the repetitions short and tied to
+a named capability; avoid turning them into long transcription exercises.
+
 Use the course's recurring sequence:
 
 > Understand the problem → plan a small step → write code → run it → inspect
@@ -35,8 +41,9 @@ the work through edge cases, clearer decomposition, tests, or a stretch goal;
 they should not race ahead by replacing practice with a larger unexplained
 project.
 
-For learners new to files, terminals, or Git, provide a recovery route at the
-point of need and let them demonstrate the programming capability separately
+For learners new to files, provide a Thonny recovery route at the point of
+need. Introduce terminals and Git later, when the project structure makes their
+purpose visible. Let learners demonstrate programming capability separately
 from a temporary environment failure.
 
 ## Feedback

@@ -20,8 +20,10 @@ If you need an agent first, use the official
 
 The agent should inspect the repository without changing course content, check
 the local tools, install the locked dependencies when needed, run the verified
-course check, start PathMX Player, open the learner home, explain what is ready,
-and ask whether you want a tour or a specific-term setup.
+course check, start PathMX Player, open the learner course website, explain what
+is ready, and ask whether you want a tour or a specific-term setup. The tour
+should make the course's staged tool model explicit: Thonny and manual practice
+first; Codespaces, Git, and optional agent-supported projects later.
 
 It will not publish the course, create GitHub repositories, change grades, or
 write learner data without your explicit approval.

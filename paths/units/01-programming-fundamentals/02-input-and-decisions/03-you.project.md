@@ -3,7 +3,7 @@ type: project
 status: pilot-ready
 ---
 
-# Project: `you.py`
+# Application: `you.py`
 
 Turn the static Week 1 card into an interactive profile builder. Use fictional
 or non-sensitive input while demonstrating the program.
@@ -26,7 +26,7 @@ border = "+" + "-" * (content_width + 2) + "+"
 
 Use an f-string and `.ljust(content_width)` to align each content row.
 
-Commit the working card.
+Save and run the working card before continuing.
 
 ## Phase 2: Add ratings
 
@@ -42,7 +42,7 @@ stars = filled + empty
 
 Display the trait name and stars below the profile.
 
-Commit the working rating display.
+Save and run the working rating display before continuing.
 
 ## Phase 3: Validate the range
 
@@ -57,13 +57,14 @@ entered where a number is expected.
 
 ## Evidence checklist
 
-- [ ] `you.py` runs from the documented command.
+- [ ] `you.py` runs with **F5** in Thonny.
 - [ ] It collects and stores every required input.
 - [ ] Numeric text is converted deliberately.
 - [ ] The dynamic border fits the content used in your demonstration.
 - [ ] Ratings display with exactly five star characters.
 - [ ] Out-of-range numeric ratings produce a clear result.
-- [ ] At least three descriptive commits are pushed.
+- [ ] The file is saved with the exact name `you.py`.
+- [ ] The intended file is uploaded through the stated submission channel.
 - [ ] You can explain `=`, `==`, the branch order, and one boundary test.
 
 ## Stretch

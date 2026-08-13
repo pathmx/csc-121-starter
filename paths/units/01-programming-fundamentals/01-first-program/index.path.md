@@ -14,23 +14,23 @@ with variables, and produce a readable text interface.
 
 A `me.py` profile-card program that:
 
-- runs from the terminal;
+- is typed, saved, and run in Thonny;
 - uses variables rather than repeating personal values;
 - creates a border using string operations;
 - produces readable output; and
-- has at least three meaningful commits.
+- is submitted with the exact required filename.
 
 ## Week sequence
 
 1. [Lesson: Output, values, and variables](./01-output-values-variables.lesson.md)
 2. [Lab: Gutenberg print workshop](./02-gutenberg.lab.md)
-3. [Project: `me.py`](./03-me.project.md)
+3. [Application: `me.py`](./03-me.project.md)
 4. [Self-check](./week.assessment.md)
 
 ## Entry
 
-No programming experience is assumed. Before the lab, you need access to your
-practice repository and a working Python command.
+No programming experience is assumed. Before the lab, you need Thonny and the
+Week 1 starter file or instructions provided by your instructor.
 
 ## Next
 

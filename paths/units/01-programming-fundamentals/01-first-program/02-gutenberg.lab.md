@@ -11,17 +11,13 @@ readable output artifact.
 
 ## Setup
 
-Use your assigned practice repository. Open `week-01/lab.py` or create it if
-your instructor directs you to do so.
+Open the assigned `lab.py` file in Thonny, or create and save it if your
+instructor directs you to do so. Confirm the file is inside your CSC-121 work
+folder before you begin.
 
-Run the empty or starter program before editing:
-
-```sh
-python week-01/lab.py
-```
-
-If that command fails because the path is different, stop and reconcile the
-repository instructions before writing code.
+Press **F5** to run the empty or starter program before editing. If Thonny runs
+another file, stop and reconcile the active tab and filename before writing
+code.
 
 ---
 
@@ -36,12 +32,7 @@ print("This is line 3")
 ```
 
 Run the file. Reorder the statements and run it again. Restore the intended
-order and make a commit:
-
-```sh
-git add week-01/lab.py
-git commit -m "Print the first three lines"
-```
+order, save, and run it once more.
 
 ---
 
@@ -70,7 +61,8 @@ join the integer issue number to text.
 Change `border_width` once. Both borders should change. Change `issue_number`
 once. The printed issue should change.
 
-Commit the working checkpoint with a message that names what became reusable.
+Save this working checkpoint before continuing. Be ready to name what became
+reusable.
 
 ---
 
@@ -102,8 +94,8 @@ yet; record one limitation as a comment at the bottom of the file.
 
 - [ ] Run the complete program.
 - [ ] Remove abandoned experiments that are not part of the artifact.
-- [ ] Make a final descriptive commit.
-- [ ] Push and verify the commit on GitHub.
+- [ ] Save and reopen `lab.py` to confirm its location and final contents.
+- [ ] Submit it through the channel named by your instructor.
 - [ ] Be ready to show one variable and every place it affects output.
 
-Next: [Project `me.py`](./03-me.project.md).
+Next: [Application `me.py`](./03-me.project.md).

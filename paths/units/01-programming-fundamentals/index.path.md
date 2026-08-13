@@ -18,7 +18,7 @@ By the end of Unit 1, you will be able to:
 - repeat behavior and update state with loops;
 - organize related data with lists;
 - decompose behavior into functions;
-- use Git commits to preserve working checkpoints; and
+- save, name, and submit Python files reliably; and
 - transfer these capabilities to an unfamiliar small problem.
 
 ## Unit map
@@ -36,13 +36,15 @@ By the end of Unit 1, you will be able to:
    - Evidence: a readable program whose state and behavior are separated.
 5. **Week 5: Integration and transfer** — mapped
    - Review by reading, predicting, testing, and repairing programs.
-   - Evidence: an integrative project followed by a controlled transfer exam.
+   - Evidence: an integrative application followed by a pencil-and-paper transfer
+     exam.
 
 ## Unit evidence
 
-The Unit 1 exam should present a new but comparable problem. It should test
-problem decomposition, values, decisions, repetition, collections, functions,
-and debugging without requiring a library or domain students have not seen.
+The Unit 1 exam should present a new but comparable problem on paper. It should
+test problem decomposition, reading and tracing code, values, decisions,
+repetition, collections, functions, and debugging without requiring a library,
+editor shortcut, or domain students have not seen.
 
 ## Begin
 

@@ -1,9 +1,14 @@
 # CSC-121 course starter
 
-This is a reusable, PathMX-authored baseline for a project-based introduction
-to programming with Python. It distills the stable course flow from three
-previous CSC-121 offerings without carrying forward student records,
-term-specific links, or custom grading machinery.
+This is a reusable baseline for an introduction to programming with Python.
+PathMX provides a calm course website for guided lessons, labs, projects, and
+references. Students begin with Thonny and ordinary Python files; GitHub,
+Codespaces, and agent-assisted project workflows arrive only after they have
+built basic programming fluency.
+
+The Starter distills the stable course flow from three previous CSC-121
+offerings without carrying forward student records, term-specific links, or
+custom grading machinery.
 
 The complete 15-week journey is mapped. Weeks 1 and 2 are the pilot-ready
 teaching slice; later weeks name the capability, practice, and evidence an
@@ -47,19 +52,21 @@ The learner home is `paths/index.path.md`. Instructor-only material is under
 ## What is ready
 
 - **Mapped:** audience, course promise, outcomes, 15-week sequence, evidence,
-  assignment-repository model, and final performance.
+  staged tool progression, paper exams, and final performance.
 - **Pilot-ready:** Weeks 1 and 2, including lessons, guided labs, independent
-  projects, self-checks, and repository templates.
+  applications, self-checks, Thonny instructions, and downloadable Python
+  files.
 - **Needs instructor adaptation:** term dates, institutional policies,
-  assignment service, later-week lesson details, exam prompts, and deployment
-  credentials.
+  early submission method, later GitHub project workflow, later-week lesson
+  details, exam prompts, and deployment credentials.
 
 ## Repository map
 
 - `paths/` — learner curriculum, references, and instructor guides.
-- `assignment-templates/` — sanitized starter repositories for practice,
-  projects, exams, and the final project.
-- `operations/` — Classroom 50, plain GitHub, deployment, and agent workflows.
+- `assignment-templates/` — sanitized Python starter folders for early
+  download and later project repositories.
+- `operations/` — later-course GitHub options, deployment, and instructor
+  agent workflows.
 - `.agents/skills/` — official PathMX skills plus the course-owned instructor
   onboarding skill.
 - `INSTRUCTOR-START.md` — one-command Codex or Claude Code onboarding.
@@ -70,24 +77,34 @@ The learner home is `paths/index.path.md`. Instructor-only material is under
 
 The default calendar uses 15 weeks:
 
-- Weeks 1–5: programming fundamentals and a transfer exam.
-- Weeks 6–10: structured data, file I/O, modules, packages, and a second exam.
+- Weeks 1–5: programming fundamentals in Thonny, manual code practice, and a
+  pencil-and-paper transfer exam.
+- Weeks 6–10: a supported transition to Codespaces and Git, followed by an
+  applied data project and a second pencil-and-paper exam.
 - Weeks 11–15: a proposed, tested, documented, and presented final project.
 
 Each ordinary week follows the same rhythm:
 
 1. model a capability in lecture;
 2. practice it with support in lab;
-3. apply it independently in a project;
-4. commit, submit, explain, and use feedback.
+3. apply it independently in a small application or project;
+4. save, submit, explain, and use feedback.
 
-## Assignment repositories
+In the project phase, Git commits become part of that loop. They are not an
+entry requirement for learning the first Python concepts.
 
-GitHub Classroom shuts down on August 28, 2026, so this Starter does not
-contain Classroom invitation links or API dependencies. The recommended first
-trial is Classroom 50's web interface. Every assignment template also works
-with ordinary GitHub repositories if the instructor prefers a lower-level
-fallback. See [Classroom 50 setup](./operations/classroom50.guide.md) and
+## Student tools and assignment distribution
+
+For the foundations unit, the simplest baseline is Thonny plus files delivered
+and collected through the institution's LMS. Students should not need a
+GitHub account, terminal workflow, or coding agent to complete the first unit.
+
+For applied and final projects, introduce VS Code in GitHub Codespaces and a
+small Git workflow as course content. [GitHub Classroom is being
+decommissioned](https://github.blog/changelog/2026-05-26-github-classroom-sign-ups-are-no-longer-available/)
+on August 28, 2026, so the Starter does not depend on it. Classroom 50 or plain
+GitHub can be piloted later, after students are ready for repository-based
+projects. See [Classroom 50 setup](./operations/classroom50.guide.md) and
 [plain GitHub fallback](./operations/plain-github-fallback.guide.md).
 
 ## PathMX and deployment

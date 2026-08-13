@@ -28,7 +28,7 @@ Point to:
 - one integer value;
 - one assignment statement;
 - one expression Python evaluates before `print()`;
-- one commit that records a working checkpoint.
+- the filename and folder where your work is saved.
 
 ## Transfer
 

@@ -20,13 +20,13 @@ formatted result.
 
 1. [Lesson: Ask, convert, decide](./01-ask-convert-decide.lesson.md)
 2. [Lab: Interactive kiosk](./02-interactive-kiosk.lab.md)
-3. [Project: `you.py`](./03-you.project.md)
+3. [Application: `you.py`](./03-you.project.md)
 4. [Self-check](./week.assessment.md)
 
 ## Entry
 
 You should be able to run a Python file, assign variables, use basic string and
-number operations, and push a working commit.
+number operations, and save and submit the intended `.py` file.
 
 ## Next
 

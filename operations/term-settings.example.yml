@@ -10,13 +10,10 @@ course:
 repositories:
   organization: COURSE-ORGANIZATION
   provider: classroom50-or-plain-github
-  practice: URL-IN-PRIVATE-TERM-REPO
-  unit1Projects: URL-IN-PRIVATE-TERM-REPO
-  unit1Exam: URL-IN-PRIVATE-TERM-REPO
   unit2Project: URL-IN-PRIVATE-TERM-REPO
-  unit2Exam: URL-IN-PRIVATE-TERM-REPO
   finalProject: URL-IN-PRIVATE-TERM-REPO
 
 distribution:
   playerUrl: VERIFIED-COURSE-URL
   lmsUrl: OFFICIAL-LMS-URL
+  foundationsMethod: LMS-FILE-UPLOAD

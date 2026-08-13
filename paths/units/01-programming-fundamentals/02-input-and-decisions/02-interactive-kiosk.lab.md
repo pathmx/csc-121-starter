@@ -19,7 +19,7 @@ Ask for:
 Convert the minutes to an integer. Echo the collected values so you can inspect
 them during development.
 
-Commit the working input step.
+Save and run the working input step before continuing.
 
 ---
 
@@ -67,8 +67,8 @@ Add one useful decision of your own. Before coding, write:
 
 - [ ] Run every planned test.
 - [ ] Remove temporary debug prints that no longer help the user.
-- [ ] Make at least two descriptive commits.
-- [ ] Push and confirm the final code on GitHub.
+- [ ] Save and reopen the exact assigned `.py` file.
+- [ ] Submit it through the channel named by your instructor.
 - [ ] Be ready to explain why only one exhibit branch runs.
 
-Next: [Project `you.py`](./03-you.project.md).
+Next: [Application `you.py`](./03-you.project.md).

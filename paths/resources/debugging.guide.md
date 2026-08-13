@@ -2,8 +2,8 @@
 
 ## 1. Make the problem reproducible
 
-Write down the exact input and command that cause the problem. Run it again.
-If the result changes, identify what else changes with it.
+Write down the exact input and Run action or command that causes the problem.
+Run it again. If the result changes, identify what else changes with it.
 
 ## 2. Read the evidence
 
@@ -31,5 +31,5 @@ you lose the evidence that identifies the cause.
 
 ## 5. Preserve the repair
 
-Test a normal case and an edge case. Remove temporary debug output, then make a
-descriptive commit.
+Test a normal case and an edge case. Remove temporary debug output, then save a
+working checkpoint. In a later repository project, make a descriptive commit.

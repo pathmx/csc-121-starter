@@ -15,16 +15,17 @@ status: draft
 
 ## Phases
 
-1. [First working behavior and commit.]
-2. [Capability application and commit.]
-3. [Test, revision, and final commit.]
+1. [First working behavior and saved checkpoint.]
+2. [Capability application and saved checkpoint.]
+3. [Test, revision, and final submission.]
 
 ## Evidence checklist
 
 - [ ] Program runs from the documented command.
 - [ ] Required behavior is visible.
 - [ ] Normal and boundary cases were tested.
-- [ ] Descriptive commits are pushed.
+- [ ] The required file or repository revision is submitted.
+- [ ] For repository projects, descriptive commits are pushed.
 - [ ] Student can explain the central code.
 
 ## Stretch

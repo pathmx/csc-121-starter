@@ -7,7 +7,8 @@ to explain, simplify the system before adding more documentation.
 
 1. Open the week's Path and confirm the capability and evidence.
 2. Run the lecture example and lab from a clean copy.
-3. Confirm the project starter repository contains only the intended files.
+3. Confirm the current distribution contains only the intended files: an LMS
+   download in Unit 1 or a project repository in later units.
 4. Replace dates and operational links in the private term repository.
 5. Run `bun run check` and preview the exact week in Player.
 6. Publish or share the verified learner URL.
@@ -24,23 +25,28 @@ to explain, simplify the system before adding more documentation.
 
 - Ask students to run the starter before editing it.
 - Use one supported attempt before the independent challenge.
-- Require at least one descriptive commit during the session.
+- In Unit 1, watch students type, save, reopen, and run the intended file.
+- In later project units, require at least one descriptive commit during the
+  session.
 - Track repeated points of confusion for a course revision—not as a private
   judgment about a learner.
 - End with the exact project handoff.
 
 ## Reviewing projects
 
-Use the repository and the student's explanation as evidence:
+Use the submitted file or repository and the student's explanation as
+evidence:
 
 1. Does the program run in the documented way?
 2. Does it meet the named requirements?
 3. Can the student explain the important decisions and behavior?
-4. Does the commit history show an incremental process?
+4. Does the student show an incremental process through saved checkpoints or,
+   after Git is introduced, commit history?
 5. What one next revision would most improve the work?
 
 Automated checks or an agent may prepare evidence, but the instructor owns the
-grade and final feedback.
+grade and final feedback. Student AI permissions do not expand merely because
+the instructor used an agent to prepare the review.
 
 ## Close the week
 

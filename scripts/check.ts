@@ -36,11 +36,11 @@ const requiredFiles = [
   "paths/units/01-programming-fundamentals/02-input-and-decisions/week.assessment.md",
   "paths/units/02-applied-programming/index.path.md",
   "paths/units/03-final-project/index.path.md",
+  "paths/resources/run-python.guide.md",
+  "paths/resources/commit-and-submit.guide.md",
   "assignment-templates/practice/README.md",
   "assignment-templates/unit-1-projects/README.md",
-  "assignment-templates/unit-1-exam/README.md",
   "assignment-templates/unit-2-project/README.md",
-  "assignment-templates/unit-2-exam/README.md",
   "assignment-templates/final-project/README.md",
   "assignment-templates/final-project/AGENTS.md",
   "operations/classroom50.guide.md",
@@ -137,6 +137,19 @@ async function assertRepositoryShape() {
     }
   }
 
+  const foundationFiles = await Array.fromAsync(
+    new Bun.Glob("paths/units/01-programming-fundamentals/**/*.md").scan({
+      cwd: root,
+      onlyFiles: true,
+    }),
+  )
+  const prematureToolPattern = /\b(?:GitHub|terminal|git|push)\b/i
+  for (const file of foundationFiles) {
+    if (prematureToolPattern.test(await read(file))) {
+      throw new Error(`Unit 1 introduces a later-course tool in ${file}`)
+    }
+  }
+
   const textFiles = await Array.fromAsync(
     new Bun.Glob("**/*.{md,json,yml,yaml,ts,tsx,py}").scan({
       cwd: root,
@@ -224,7 +237,7 @@ async function assertAssignmentFixtures() {
     {
       directory: "assignment-templates/practice",
       command: ["python3", "week-01/lab.py"],
-      expected: "practice repository is ready",
+      expected: "practice file is ready",
     },
     {
       directory: "assignment-templates/practice",
@@ -244,19 +257,9 @@ async function assertAssignmentFixtures() {
       expected: "Project 2 is ready for Test Learner",
     },
     {
-      directory: "assignment-templates/unit-1-exam",
-      command: ["python3", "main.py"],
-      expected: "Unit 1 exam environment check passed",
-    },
-    {
       directory: "assignment-templates/unit-2-project",
       command: ["python3", "main.py"],
       expected: "Loaded 3 fictional records",
-    },
-    {
-      directory: "assignment-templates/unit-2-exam",
-      command: ["python3", "main.py"],
-      expected: "loaded 2 records",
     },
     {
       directory: "assignment-templates/final-project",

@@ -40,7 +40,7 @@ Point to:
 - one boolean expression;
 - one mutually exclusive branch;
 - one boundary test;
-- one commit made before the project was finished.
+- one saved checkpoint or earlier copy made before the project was finished.
 
 ## Transfer
 

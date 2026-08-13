@@ -6,7 +6,9 @@ status: mapped
 # Unit 2: Applied programming
 
 Move from small single-file exercises to a recurring project that reads,
-transforms, and preserves meaningful data.
+transforms, and preserves meaningful data. This unit also introduces the
+browser-based project workflow: VS Code in GitHub Codespaces, a project
+repository, and small Git checkpoints.
 
 ## Unit destination
 
@@ -17,6 +19,7 @@ By the end of Unit 2, you will be able to:
 - separate behavior into focused functions and modules;
 - create a project environment and use one documented third-party package;
 - test transformations with representative and edge-case data;
+- commit and push a working project checkpoint; and
 - explain the structure and dependencies of a multi-file program.
 
 ## Recommended project shape
@@ -32,10 +35,15 @@ core outcomes.
 
 ---
 
-## Week 6: Records and text files
+## Week 6: Enter the project workspace; records and text files
 
-**Capability:** create, access, update, and iterate over dictionaries; read a
-text file using `with open(...)`.
+**Tool transition:** open an instructor-provided GitHub repository in
+Codespaces, identify the Explorer, editor, Run/terminal surface, and Source
+Control view, then edit, run, commit, and push one harmless checkpoint. Teach
+these actions before evaluating them.
+
+**Programming capability:** create, access, update, and iterate over
+dictionaries; read a text file using `with open(...)`.
 
 **Worked example:** load lines from a fictional archive and turn each line into
 a record with an identifier, category, and status.
@@ -43,8 +51,9 @@ a record with an identifier, category, and status.
 **Lab:** inspect existing records, predict key lookups, and repair missing-key
 assumptions.
 
-**Evidence:** project checkpoint that reads source data and prints a useful
-summary without changing the original file.
+**Evidence:** a pushed project checkpoint that reads source data and prints a
+useful summary without changing the original file. The student can reopen the
+Codespace or repository and identify the submitted revision.
 
 **Immediate feedback:** a small fixture with known record counts and expected
 categories.
@@ -117,14 +126,16 @@ smoke test.
 at least two modules, a recorded dependency when used, tests or a repeatable
 verification procedure, and a clear README.
 
-**Transfer exam:** a smaller unfamiliar data-processing problem using only the
-shared core outcomes. Do not require a student's optional domain package in
-the exam.
+**Paper transfer exam:** a smaller unfamiliar data-processing problem using
+only the shared core outcomes. Students read, trace, write, and explain code
+without a computer, internet, or AI. Do not require a student's optional
+domain package or tool-specific command in the exam.
 
 ## Before teaching this unit
 
 This unit is mapped, not pilot-ready. The instructor must select one shared
 domain, prepare rights-cleared fictional data, author the exact weekly starter
-state and checks, and complete the readiness checklist for each week.
+state and checks, pilot Codespaces access with a non-student account, and
+complete the readiness checklist for each week.
 
 Next: [Final project studio](../03-final-project/index.path.md).

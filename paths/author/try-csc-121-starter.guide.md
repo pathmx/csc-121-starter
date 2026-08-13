@@ -5,8 +5,13 @@ status: pilot-ready
 
 # Try the CSC-121 PathMX Starter
 
-Hi Haorui—this is a reusable starting point for a project-based introduction
-to programming with Python. The full 15-week course is mapped, and the first
+Hi Haorui—this is a reusable starting point for an introduction to programming
+with Python. PathMX's first job is simple: it provides the course website where
+students follow guided lessons, labs, projects, policies, and references.
+
+Students begin by typing and running small programs in Thonny. The course adds
+GitHub Codespaces, Git, and more industry-shaped projects later, after the
+foundations are established. The full 15-week journey is mapped, and the first
 two weeks are prepared closely enough to run and critique.
 
 This trial should take about 15–20 minutes. You do not need to publish a
@@ -26,7 +31,6 @@ By the end, you will have:
 
 You will need:
 
-- [Git](https://git-scm.com/downloads);
 - [Bun](https://bun.sh/docs/installation); and
 - either [Codex](https://help.openai.com/en/articles/11096431) or
   [Claude Code](https://docs.anthropic.com/en/docs/claude-code/getting-started),
@@ -35,12 +39,12 @@ You will need:
 Open a terminal and confirm the basics:
 
 ```sh
-git --version
 bun --version
 ```
 
-If either command is missing, use its linked installation guide before
-continuing. You do not need to install PathMX globally.
+If Bun is missing, use its linked installation guide before continuing. You do
+not need to install PathMX globally. These are instructor-authoring tools;
+students do not need Bun or an agent to read the course website.
 
 ---
 
@@ -58,18 +62,6 @@ This downloads the public
 [CSC-121 Starter](https://github.com/pathmx/csc-121-starter), composes its
 current PathMX skills, and creates an independent local course workspace. It
 does not create a GitHub repository or deploy anything.
-
-Give the trial a local recovery point:
-
-```sh
-git init -b main
-git add .
-git commit -m "Initialize CSC-121 trial"
-```
-
-If Git asks for your name or email, follow its message to configure them and
-then repeat the commit. The course will still run without this commit, but the
-checkpoint makes later experimentation easy to review or undo.
 
 ---
 
@@ -114,15 +106,19 @@ bun run play:open
 
 In Player, inspect these parts:
 
-1. **Course home:** Does the promise and 15-week journey make sense at first
-   glance?
-2. **Week 1:** Follow the lesson, Gutenberg lab, `me.py` project, and
-   self-check. Do they form a coherent first week?
-3. **Week 2:** Look for a clear progression from input to conversion,
-   validation, and decisions.
-4. **Units 2 and 3:** These are maps rather than finished lessons. Are the
+1. **Course website:** Does the home page give students a calm, understandable
+   route through the term?
+2. **Thonny foundations:** Follow Week 1's lesson, Gutenberg lab, `me.py`
+   application, and self-check. Confirm that a student can do all of it in
+   Thonny without a terminal, GitHub account, or coding agent.
+3. **Manual practice and policy:** Read the getting-started page and policies.
+   Do the typing-practice rationale, initial no-AI boundary, and
+   pencil-and-paper exams fit the academic preparation students need?
+4. **Project transition:** Inspect Unit 2. It should teach Codespaces and Git
+   before using them for a more industry-shaped applied project.
+5. **Units 2 and 3:** These are maps rather than finished lessons. Are the
    capabilities and expected evidence specific enough for you to adapt?
-5. **Instructor guidance:** Ask the agent to show you the course brief,
+6. **Instructor guidance:** Ask the agent to show you the course brief,
    semester checklist, weekly workflow, and assignment templates.
 
 The intended boundary is important:
@@ -142,7 +138,8 @@ them for you.
 While the Player is running, ask the agent:
 
 > Compare Week 1 with the course brief. Tell me what students practice, what
-> evidence they produce, and the three most important questions I should
+> evidence they produce, and whether any learner step still assumes a terminal,
+> GitHub, or AI. Then give me the three most important questions I should
 > resolve before teaching it. Do not edit files.
 
 This is the kind of bounded course-maintenance work the repository is designed
@@ -158,8 +155,11 @@ After the trial, please send brief reactions to these questions:
 1. Where did setup feel uncertain or more technical than it needed to be?
 2. Did the agent give you a useful tour, or too much repository detail?
 3. Could you tell what was ready to teach versus still only mapped?
-4. Would the Week 1 rhythm fit how you prefer to teach an introductory course?
-5. What would you need before feeling comfortable adapting this for a term?
+4. Would the Thonny-first, no-AI foundations phase fit how you prefer to teach
+   an introductory course?
+5. Does the later Codespaces/Git project transition feel early, late, or about
+   right?
+6. What would you need before feeling comfortable adapting this for a term?
 
 You can stop the Player with `Ctrl-C` in the terminal where it is running. The
 entire trial lives in the `csc-121-trial` folder; no remote course or student

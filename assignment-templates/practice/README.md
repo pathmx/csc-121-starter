@@ -1,18 +1,15 @@
-# CSC-121 practice repository
+# CSC-121 foundations practice files
 
-Use this repository for guided labs and small code-reading exercises. Each week
-has its own folder. Follow the current course Path for the exact task.
+Use these files for guided labs and small code-reading exercises. The
+instructor may distribute individual files or a zip through the LMS; students
+do not need GitHub for the foundations unit. Each week has its own folder.
+Follow the current course Path for the exact task.
 
 ## Run a lab
 
-From the repository root:
+Open the assigned file in Thonny and press **F5**.
 
-```sh
-python week-01/lab.py
-```
+Run the starter before editing it. Save working checkpoints and submit the
+exact `.py` file through the channel named by the instructor.
 
-Run the starter before editing it. Commit at least one working checkpoint
-during each lab and push before the lab ends.
-
-Do not commit passwords, API keys, private data, virtual environments, or
-downloaded packages.
+Do not put passwords, API keys, or private data in a course file.

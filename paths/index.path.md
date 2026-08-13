@@ -33,10 +33,11 @@ By the end of the course, you will be able to:
    structured data;
 3. read files, organize a multi-file project, and use a documented package;
 4. test and debug code methodically;
-5. use Git and GitHub to preserve and communicate your work; and
+5. move from a beginner editor to Git and GitHub when projects need shared,
+   reviewable history; and
 6. design, build, document, and present a working project of your own.
 
-**Final evidence:** a working Python project, its test and revision history,
+**Final evidence:** a working Python project, its test and Git revision history,
 clear documentation, and a live explanation of the design decisions you made.
 
 ---
@@ -44,9 +45,9 @@ clear documentation, and a live explanation of the design decisions you made.
 ## Course journey
 
 1. [Programming fundamentals](./units/01-programming-fundamentals/index.path.md)
-   — Weeks 1–5
+   — Weeks 1–5, using Thonny and manual practice
 2. [Applied programming](./units/02-applied-programming/index.path.md)
-   — Weeks 6–10
+   — Weeks 6–10, adding Codespaces and Git for project work
 3. [Final project studio](./units/03-final-project/index.path.md)
    — Weeks 11–15
 
@@ -58,6 +59,7 @@ concrete course map that your instructor will finish and adapt for the term.
 ## Start here
 
 - Read [how the course works](./course/getting-started.path.md).
+- Set up [Thonny for the foundations unit](./resources/run-python.guide.md).
 - See the [term-neutral course schedule](./course/schedule.path.md).
 - Review [course policies](./course/policies.guide.md).
 - Keep [the resources index](./resources/index.guide.md) nearby.

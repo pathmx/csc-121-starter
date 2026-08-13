@@ -1,7 +1,7 @@
 # Classroom 50 setup
 
-Use this as the first assignment-distribution pilot, not as a hidden curriculum
-dependency.
+Use this only when repository-based project work begins, not for the Thonny
+foundations unit and not as a hidden curriculum dependency.
 
 GitHub Classroom stops operating on August 28, 2026. Classroom 50 is the free,
 open-source successor supported by the Fifty Foundation and identified by
@@ -11,6 +11,7 @@ Actions-based autograding, collect submissions, and support inline feedback.
 
 Current documentation:
 
+- <https://github.blog/changelog/2026-05-26-github-classroom-sign-ups-are-no-longer-available/>
 - <https://github.com/foundation50/classroom50/wiki>
 - <https://classroom50.org/>
 
@@ -26,17 +27,17 @@ configuring a term.
   course administrator.
 - Student GitHub accounts.
 
-## Pilot one assignment
+## Pilot one later project assignment
 
 1. Open the Classroom 50 web teacher interface.
 2. Connect the course organization using the permissions shown by the current
    guide.
 3. Create a test class with a fictional or instructor-controlled learner.
-4. Copy `assignment-templates/practice` into a standalone GitHub starter
+4. Copy `assignment-templates/unit-2-project` into a standalone GitHub starter
    repository.
 5. Create one individual assignment from that starter.
 6. Accept it using the test learner.
-7. Run `python week-01/lab.py`, commit a change, and push.
+7. Open it in Codespaces, run `python main.py`, commit a change, and push.
 8. As the instructor, locate the submission and leave one inline comment.
 9. Record the result and any permission friction in the private term repo.
 
@@ -47,15 +48,13 @@ assignments.
 
 Keep repository administration modest:
 
-1. one recurring practice/lab repository;
-2. one Unit 1 projects repository;
-3. one isolated Unit 1 exam repository;
-4. one recurring Unit 2 applied-project repository;
-5. one isolated Unit 2 exam repository;
-6. one final-project repository.
+1. one recurring Unit 2 applied-project repository; and
+2. one final-project repository.
 
-This preserves controlled exams and useful commit histories without asking
-students to accept a new repository every week.
+Optionally create one ungraded Git/Codespaces sandbox before the Unit 2
+project. Unit 1 files remain in the LMS workflow, and exams remain on paper.
+This preserves useful project histories without making repository management
+part of every assignment.
 
 ## What stays outside the curriculum
 

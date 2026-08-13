@@ -7,7 +7,8 @@ status: draft
 
 ## Setup
 
-[Repository, file, command, and expected baseline result.]
+[For Unit 1: Thonny, file, and expected baseline result. For later projects:
+repository, Codespace, command, and expected baseline result.]
 
 ## Supported attempt
 
@@ -15,7 +16,8 @@ status: draft
 
 ## Checkpoint
 
-[Runnable behavior and a descriptive commit.]
+[Runnable behavior and a saved checkpoint. Add a descriptive commit only after
+Git has been taught.]
 
 ## Independent challenge
 
@@ -28,6 +30,7 @@ status: draft
 ## Finish
 
 - [ ] Run the final behavior.
-- [ ] Commit and push.
-- [ ] Verify the remote repository.
+- [ ] Save the exact required file.
+- [ ] Submit through the current unit's stated channel.
+- [ ] For repository projects, commit, push, and verify the remote revision.
 - [ ] Prepare to explain one decision.

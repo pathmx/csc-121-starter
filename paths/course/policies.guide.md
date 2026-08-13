@@ -21,24 +21,26 @@ used and how it helped.
 
 ## AI tools
 
-AI permissions change as the course progresses:
+The course starts with a no-AI policy:
 
-- **Unit 1:** use AI for explanations or guiding questions only when your
-  instructor permits it. Do not ask it to write assignment code.
-- **Unit 2:** use AI for bounded explanation, debugging, documentation, and
-  unfamiliar-library help. Record material use.
-- **Unit 3:** coding agents are permitted within the final-project policy. You
-  remain responsible for the design, central logic, tests, and explanation.
+- **Unit 1:** do not use generative AI for lessons, labs, projects, or graded
+  work. Type, trace, run, and revise the code yourself.
+- **Unit 2:** AI remains unavailable unless your instructor explicitly permits
+  a specific bounded use after the related foundation has been assessed.
+- **Unit 3:** your instructor may permit coding agents within the published
+  final-project policy. You remain responsible for the design, central logic,
+  tests, and explanation.
 
-Read [responsible agent use](../resources/agent-use.policy.md) before using a
-coding agent.
+If permission is not stated, assume AI is not permitted. Read [responsible
+agent use](../resources/agent-use.policy.md) before any permitted use.
 
 ## Assessments
 
-Practice and projects may permit collaboration or bounded assistance. Transfer
-exams are completed under the conditions stated by the instructor and may
-restrict internet, AI, notes, or communication. When in doubt, ask before the
-assessment begins.
+Practice and projects may permit collaboration or bounded assistance. Unit
+transfer exams are completed with pencil and paper under the conditions stated
+by the instructor. They assess reading, tracing, writing, debugging, and
+explanation without an editor, internet, or AI. The instructor will state what
+notes, if any, are permitted.
 
 ## Late work and attendance
 

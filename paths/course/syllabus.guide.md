@@ -16,9 +16,11 @@
 
 ## Course description
 
-This is a hands-on, project-based introduction to programming using Python.
-Students learn to break down problems, write and revise programs, test and
-debug code, work with data, and communicate about technical decisions.
+This is a hands-on introduction to programming using Python. Students begin
+with focused manual practice in Thonny, then move into applied and final
+projects using browser-based professional tools. They learn to break down
+problems, write and revise programs, test and debug code, work with data, and
+communicate about technical decisions.
 
 ## Learning outcomes
 
@@ -34,37 +36,41 @@ By the end of the term, students will be able to:
 
 ## Course format
 
-Most weeks connect a lesson, guided lab, independent project, and feedback.
+Most weeks connect a lesson, guided lab, independent application, and feedback.
 The 15-week baseline has three units:
 
-1. Programming fundamentals.
-2. Applied programming with data, files, modules, and packages.
-3. A student-proposed final project.
+1. Programming fundamentals in Thonny, ending with a paper exam.
+2. Applied programming with data, files, modules, packages, Codespaces, and
+   Git, ending with a paper exam.
+3. A student-proposed final project in a GitHub repository.
 
 ## Suggested assessment weights
 
 | Category | Suggested weight | Evidence |
 | --- | ---: | --- |
-| Projects | 50% | Weekly applications, unit exams, and final project |
-| Practice | 25% | Labs, checkpoints, and supported attempts |
-| Professional practice | 25% | Communication, source control, revision, participation, and explanation |
+| Projects | 40% | Weekly applications, applied project, and final project |
+| Paper exams | 25% | Independent code reading, tracing, writing, and explanation |
+| Practice | 20% | Labs, checkpoints, and supported attempts |
+| Professional practice | 15% | Communication, revision, participation, explanation, and later source control |
 
 The instructor should publish exact scoring, drop, revision, and rounding rules
 before the first graded work.
 
 ## Submission
 
-Programming work is normally submitted through an assigned GitHub repository.
-A push to the wrong repository, an unpushed local change, or a program that
-cannot be run from its README may not count as a complete submission. Students
-should verify the remote repository before the deadline.
+In Unit 1, programming files are normally submitted through [LMS or approved
+channel] after being run in Thonny. In Units 2 and 3, project work is normally
+submitted through an assigned GitHub repository after the course explicitly
+teaches the Codespaces and Git workflow. Publish exact filenames, locations,
+and deadline rules with every assignment.
 
 ## Collaboration, integrity, and AI
 
 Students may collaborate within the boundaries stated for each activity, but
-must author and understand submitted work. External assistance must be
-acknowledged when it materially affects the solution. AI permissions expand
-across the course; see [course policies](./policies.guide.md).
+must author and understand submitted work. Generative AI is not permitted in
+Unit 1 or on paper exams. The instructor may announce bounded permissions for
+later projects; external assistance must be acknowledged when it materially
+affects the solution. See [course policies](./policies.guide.md).
 
 ## Required institutional language
 

@@ -30,6 +30,10 @@ private term information during the initial tour without explicit approval.
 
 - Keep `paths/index.path.md` as the single learner Root.
 - Keep instructor notes under `paths/author/` and outside learner navigation.
+- Keep Unit 1 runnable in Thonny without GitHub, a terminal, or generative AI.
+- Keep unit exams pencil-and-paper assessments; do not create exam repositories.
+- Introduce Codespaces and Git as taught Unit 2 project capabilities, not entry
+  requirements.
 - Design from observable student work. Every activity should support a named
   capability and every capability should have evidence.
 - Keep ordinary Markdown understandable outside PathMX.
