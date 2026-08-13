@@ -11,6 +11,7 @@ const binary = path.join(root, "node_modules", ".bin", "pathmx")
 const requiredFiles = [
   "AGENTS.md",
   "INSTRUCTOR-START.md",
+  "LICENSE",
   "README.md",
   ".agents/skills/onboard-csc-121-instructor/SKILL.md",
   ".agents/skills/onboard-csc-121-instructor/agents/openai.yaml",

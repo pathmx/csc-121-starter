@@ -106,3 +106,10 @@ CLI. See [PathMX and deployment](./operations/deployment.guide.md) and
 Never add real rosters, learner profiles, submissions, grades, emails,
 credentials, or downloaded student repositories to this Starter. Create a
 private term repository or private operational store for those records.
+
+## License
+
+The course Sources, assignment templates, documentation, and supporting code
+are available under the [MIT License](./LICENSE). You may adapt the Starter for
+another course or institution while preserving the copyright and license
+notice.
