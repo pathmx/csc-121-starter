@@ -1,68 +1,68 @@
 # CSC-121 Starter instructions
 
-This repository is a reusable course baseline for multiple learners. Keep it
-calm enough that a technically capable instructor who is new to PathMX can
-understand and operate it without reverse-engineering hidden automation.
+This repository is a small, evolvable PathMX course website. Help the
+instructor understand and extend it without turning the Starter into a
+prewritten semester or a large operational system.
 
 ## Instructor onboarding trigger
 
-When an instructor begins with a broad request such as “start,” “onboard me,”
-“show me around,” “help me set this up,” or “what should I do first,” use the
-installed `onboard-csc-121-instructor` skill. Lead the setup proactively: run
-the safe local preflight and course check, start and verify Player, explain the
-honest readiness boundary, and guide one decision at a time. Do not require the
-instructor to know the skill name or repository structure.
+When an instructor says “start,” “onboard me,” “show me PathMX,” “run the
+course,” or asks what to do first, use `onboard-csc-121-instructor`. Lead the
+short authoring lab and keep the first session focused on:
 
-Do not deploy, create remote repositories, edit course content, or collect
-private term information during the initial tour without explicit approval.
+1. what curriculum as code makes possible;
+2. one Source and its Player page;
+3. one small edit or prototype; and
+4. local preview before public sharing.
 
-## Before changing the course
+Do not deploy, create remote repositories, restructure the course, or collect
+private term information during the tour without explicit approval.
 
-1. Read `README.md`, `paths/author/course-brief.guide.md`, and the nearest unit
-   or week Source.
-2. Use the installed `teach` skill for curriculum or shared-learning work.
-3. Use the installed `pathmx` skill for Source, configuration, build, Player,
-   or publishing work.
-4. Run `bun install --frozen-lockfile` when dependencies are missing.
+## Material prototyping trigger
+
+When the instructor asks to draft, prototype, revise, connect, or review a
+lecture, lesson, lab, assignment, assessment, module, or teaching week, use
+`prototype-course-material`. New material belongs under `paths/drafts/` until
+the instructor approves its learning shape and learner-facing placement.
+
+## Before changing curriculum
+
+1. Read `README.md`, `paths/author/course-brief.guide.md`, and the nearest
+   relevant Source.
+2. Use the installed `teach` skill for shared-learning decisions.
+3. Use the installed `pathmx` skill for Markdown, graph, Player, and Share work.
+4. Inspect `git status --short` and preserve unrelated work.
 5. Run `bun run check` before handoff.
 
-## Course boundaries
+## Starter boundaries
 
 - Keep `paths/index.path.md` as the single learner Root.
-- Keep instructor notes under `paths/author/` and outside learner navigation.
-- Keep Unit 1 runnable in Thonny without GitHub, a terminal, or generative AI.
-- Keep unit exams pencil-and-paper assessments; do not create exam repositories.
-- Introduce Codespaces and Git as taught Unit 2 project capabilities, not entry
-  requirements.
-- Design from observable student work. Every activity should support a named
-  capability and every capability should have evidence.
-- Keep ordinary Markdown understandable outside PathMX.
-- Use fictional people and data in examples.
-- Do not add a new platform dependency when a documented convention suffices.
+- Keep the default learner graph small enough to understand in one sitting.
+- Preserve one complete example week; do not grow it into a full course unless
+  the instructor asks.
+- Keep drafts and instructor notes outside learner navigation.
+- Write ordinary, portable Markdown before using specialized PathMX behavior.
+- Treat the example Thonny workflow, policy language, and activity theme as
+  editable examples rather than permanent course requirements.
+- The LMS or another approved institutional system remains authoritative for
+  enrollment, grades, accommodations, and private records.
 
-## Privacy and operations
+## Publishing and privacy
 
-- Never commit real rosters, submissions, grades, email addresses, student
-  paths, credentials, or downloaded repositories.
-- Keep assignment distribution swappable. Curriculum Sources may describe a
-  repository role, but must not contain a live Classroom 50 class ID or an old
-  GitHub Classroom invitation URL.
-- Keep grading and agent automation optional. The manual teacher workflow must
-  remain documented and usable.
-- Do not deploy or create remote repositories unless the maintainer asks.
+- Local preview is always safe; public Share is an external mutation and needs
+  explicit instructor approval.
+- Never expose or print `PATHMX_SHARE_TOKEN`.
+- Never commit rosters, submissions, grades, learner identities, credentials,
+  private feedback, or downloaded student repositories.
+- Instructor agent use does not change student AI permissions.
 
 ## PathMX version safety
 
 - The exact dependency and lockfile define valid syntax.
-- Test an update in a clean commit, run `bun run check`, and inspect the exact
-  Player route before changing `pathmxCompatibility.baseline`.
-- Do not edit the official `learn`, `pathmx`, or `teach` skill directories;
-  refresh them with `pathmx init --skills`.
-- `onboard-csc-121-instructor` is repository-owned and must remain intact when
-  the official skills are refreshed.
+- Do not upgrade PathMX as part of ordinary curriculum authoring.
+- Do not hand-edit the official `learn`, `pathmx`, or `teach` skills; refresh
+  them with `pathmx init --skills`.
+- Preserve the repository-owned onboarding and prototyping skills during an
+  official skill refresh.
 - The canonical public template must not track
-  `.agents/pathmx-skills.receipt.json`. PathMX reserves that receipt for each
-  newly initialized workspace. When maintaining the canonical template,
-  refresh official skills with `pathmx init --skills --force`, review the
-  managed skill changes, remove the generated receipt before committing, and
-  run `bun run check`.
+  `.agents/pathmx-skills.receipt.json`; initialized workspaces own that file.

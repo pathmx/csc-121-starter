@@ -1,26 +1,21 @@
 ---
 type: assessment
-status: draft
+status: template
 ---
 
-# [Week] self-check
+# Self-check: [capability]
 
 ## Predict
 
-[Small code-reading task.]
-
-## Diagnose
-
-[One representative mistake or failure.]
+[A short example the learner reasons through before using the tool.]
 
 ## Explain
 
-[Evidence students identify in their own project.]
+[One or two prompts about why the result occurs.]
 
 ## Transfer
 
-[A small variation completed independently.]
+[A small new situation requiring the same underlying idea.]
 
-## Next
-
-[Readiness statement and exact route forward.]
+If this is not secure yet, return to [the most useful practice] and try a
+smaller example.

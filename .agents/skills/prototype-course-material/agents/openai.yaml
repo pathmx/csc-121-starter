@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prototype Course Material"
+  short_description: "Draft and verify course teaching materials"
+  default_prompt: "Use $prototype-course-material to prototype a lesson, lab, assignment, or complete teaching week."

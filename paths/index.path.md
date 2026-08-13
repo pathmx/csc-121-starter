@@ -1,6 +1,6 @@
 ---
 type: path
-status: pilot-ready
+status: starter
 theme:
   color:
     bg: oklch(0.985 0.006 95)
@@ -17,52 +17,31 @@ theme:
     radius: 0.8rem
 ---
 
-# CSC-121: Introduction to Programming
+# CSC-121 Course Site
 
-Learn to turn a problem into a small, readable Python program—and to explain,
-test, and improve what you build.
+Welcome to CSC-121. This small site is where you will find the current guided
+lessons, practice, assignments, policies, and reference material for the
+course.
 
----
-
-## What you will be able to do
-
-By the end of the course, you will be able to:
-
-1. decompose a problem into a sequence of testable steps;
-2. write Python programs using values, decisions, repetition, functions, and
-   structured data;
-3. read files, organize a multi-file project, and use a documented package;
-4. test and debug code methodically;
-5. move from a beginner editor to Git and GitHub when projects need shared,
-   reviewable history; and
-6. design, build, document, and present a working project of your own.
-
-**Final evidence:** a working Python project, its test and Git revision history,
-clear documentation, and a live explanation of the design decisions you made.
+This Starter intentionally contains only one example week. Your instructor
+will adapt its language, sequence, tools, and policies as the course takes
+shape.
 
 ---
 
-## Course journey
+## Begin
 
-1. [Programming fundamentals](./units/01-programming-fundamentals/index.path.md)
-   — Weeks 1–5, using Thonny and manual practice
-2. [Applied programming](./units/02-applied-programming/index.path.md)
-   — Weeks 6–10, adding Codespaces and Git for project work
-3. [Final project studio](./units/03-final-project/index.path.md)
-   — Weeks 11–15
-
-Weeks 1 and 2 are fully prepared in this Starter. The remaining weeks are a
-concrete course map that your instructor will finish and adapt for the term.
+1. Read [how this example course works](./course/getting-started.path.md).
+2. Try the [example week: your first Python program](./example-week/index.path.md).
+3. Keep the [small resources index](./resources/index.guide.md) nearby.
 
 ---
 
-## Start here
+## Example policy direction
 
-- Read [how the course works](./course/getting-started.path.md).
-- Set up [Thonny for the foundations unit](./resources/run-python.guide.md).
-- See the [term-neutral course schedule](./course/schedule.path.md).
-- Review [course policies](./course/policies.guide.md).
-- Keep [the resources index](./resources/index.guide.md) nearby.
-- Begin [Week 1: Your first program](./units/01-programming-fundamentals/01-first-program/index.path.md).
+The included [foundations policy](./course/policies.guide.md) demonstrates one
+possible starting point: manual practice, an initial no-AI period, and
+pencil-and-paper transfer checks. It is an editable example, not a PathMX
+requirement.
 
 [@root.styles]: ./theme.css

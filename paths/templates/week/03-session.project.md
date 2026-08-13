@@ -1,33 +1,29 @@
 ---
 type: project
-status: draft
+status: template
 ---
 
-# [Project title]
+# Assignment: [purposeful result]
 
-## User and purpose
-
-[Who uses this and what should it let them do?]
+[Who is it for, and why would they use it?]
 
 ## Required behavior
 
-[Small observable requirements aligned to the week's capability.]
+- [Requirement tied to the week's capability]
+- [Requirement tied to observable evidence]
+- [Constraint, permitted help, or privacy boundary]
 
-## Phases
+## Work in phases
 
-1. [First working behavior and saved checkpoint.]
-2. [Capability application and saved checkpoint.]
-3. [Test, revision, and final submission.]
+1. [Plan or sketch]
+2. [Smallest running version]
+3. [Required behavior]
+4. [Test and explain]
 
-## Evidence checklist
+## Evidence
 
-- [ ] Program runs from the documented command.
-- [ ] Required behavior is visible.
-- [ ] Normal and boundary cases were tested.
-- [ ] The required file or repository revision is submitted.
-- [ ] For repository projects, descriptive commits are pushed.
-- [ ] Student can explain the central code.
+[What the learner submits, demonstrates, and explains.]
 
 ## Stretch
 
-[Optional depth that does not redefine completion.]
+[One optional extension that does not hide the core requirement.]

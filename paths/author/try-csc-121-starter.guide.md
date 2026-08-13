@@ -1,166 +1,98 @@
 ---
 type: guide
-status: pilot-ready
+status: starter
 ---
 
 # Try the CSC-121 PathMX Starter
 
-Hi Haorui—this is a reusable starting point for an introduction to programming
-with Python. PathMX's first job is simple: it provides the course website where
-students follow guided lessons, labs, projects, policies, and references.
+This is a short, instructor-facing introduction to using PathMX as a course
+website and authoring workspace. It starts with one example week so you can
+adapt it to your own teaching rather than inherit a finished semester.
 
-Students begin by typing and running small programs in Thonny. The course adds
-GitHub Codespaces, Git, and more industry-shaped projects later, after the
-foundations are established. The full 15-week journey is mapped, and the first
-two weeks are prepared closely enough to run and critique.
-
-This trial should take about 15–20 minutes. You do not need to publish a
-course, create a GitHub organization, or commit to the curriculum.
-
-By the end, you will have:
-
-- your own local copy of the course;
-- a verified PathMX build;
-- the learner course open in PathMX Player; and
-- an agent-guided tour of what is ready and what still needs an instructor's
-  decisions.
+PathMX is a work in progress. The useful idea is simple: keep guided curriculum
+as readable Markdown files, connect those files into a learner journey, review
+them in the Player, and use an agent when it helps you prototype or check the
+work.
 
 ---
 
-## 1. Check the prerequisites
+## What you will try
 
-You will need:
+In about 20 minutes you can:
 
-- [Bun](https://bun.sh/docs/installation); and
-- either [Codex](https://help.openai.com/en/articles/11096431) or
-  [Claude Code](https://docs.anthropic.com/en/docs/claude-code/getting-started),
-  installed and signed in.
+1. open the example course in the PathMX Player;
+2. connect one Markdown Source to what appears in the course website;
+3. change one sentence and see the result;
+4. ask Codex or Claude Code to prototype a small unlinked lab; and
+5. decide whether the workflow fits any part of your course.
 
-Open a terminal and confirm the basics:
-
-```sh
-bun --version
-```
-
-If Bun is missing, use its linked installation guide before continuing. You do
-not need to install PathMX globally. These are instructor-authoring tools;
-students do not need Bun or an agent to read the course website.
+Students do not need PathMX, Bun, Git, or an agent for the opening Python
+experience. They can begin in Thonny while you use PathMX to publish guided
+material. Git, VS Code, and Codespaces can arrive later for project-based work.
 
 ---
 
-## 2. Create a local trial from the public template
+## Get the Starter
 
-Choose a folder where you keep projects, then run:
-
-```sh
-bunx @fellowhumans/pathmx@latest init csc-121-trial \
-  --template csc-121-starter
-cd csc-121-trial
-```
-
-This downloads the public
-[CSC-121 Starter](https://github.com/pathmx/csc-121-starter), composes its
-current PathMX skills, and creates an independent local course workspace. It
-does not create a GitHub repository or deploy anything.
-
----
-
-## 3. Ask the course agent to lead the setup
-
-From inside `csc-121-trial`, start one agent:
+Install [Bun](https://bun.sh/docs/installation), then run:
 
 ```sh
-codex "Onboard me as the CSC-121 instructor."
-```
-
-or:
-
-```sh
-claude "Onboard me as the CSC-121 instructor."
-```
-
-The repository includes a dedicated instructor-onboarding skill. The agent
-should:
-
-1. inspect the course without changing it;
-2. install the locked local dependencies;
-3. run the course and assignment checks;
-4. start PathMX Player and open the course home;
-5. explain the course structure and readiness boundary; and
-6. ask whether you want a read-only tour or a specific-term setup.
-
-For this first pass, choose the **tour**. The agent should leave the Player
-running while you explore.
-
-If you prefer to try the course without an agent, use:
-
-```sh
+bunx @fellowhumans/pathmx init csc-121 --template csc-121-starter
+cd csc-121
 bun install --frozen-lockfile
-bun run onboard
-bun run play:open
 ```
 
----
+The current PathMX template command supports public template repositories in
+the `pathmx` GitHub organization. The recommended privacy boundary is:
 
-## 4. Take the short instructor tour
+1. keep the reusable Starter public and free of student or institution-private
+   information;
+2. initialize a local copy from it; and
+3. push the actual course to a new private repository that you control.
 
-In Player, inspect these parts:
+Being invited to a private GitHub template is not enough for the current
+`pathmx init --template` implementation because it does not use your local Git
+credentials for template download.
 
-1. **Course website:** Does the home page give students a calm, understandable
-   route through the term?
-2. **Thonny foundations:** Follow Week 1's lesson, Gutenberg lab, `me.py`
-   application, and self-check. Confirm that a student can do all of it in
-   Thonny without a terminal, GitHub account, or coding agent.
-3. **Manual practice and policy:** Read the getting-started page and policies.
-   Do the typing-practice rationale, initial no-AI boundary, and
-   pencil-and-paper exams fit the academic preparation students need?
-4. **Project transition:** Inspect Unit 2. It should teach Codespaces and Git
-   before using them for a more industry-shaped applied project.
-5. **Units 2 and 3:** These are maps rather than finished lessons. Are the
-   capabilities and expected evidence specific enough for you to adapt?
-6. **Instructor guidance:** Ask the agent to show you the course brief,
-   semester checklist, weekly workflow, and assignment templates.
-
-The intended boundary is important:
-
-- **Pilot-ready:** Weeks 1 and 2.
-- **Mapped for preparation:** Weeks 3–15.
-- **Instructor-owned:** term dates, institutional policy, grading details,
-  later lessons and assessments, assignment distribution, and deployment.
-
-The Starter should make those decisions visible without pretending to make
-them for you.
+[GitHub's own template flow](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+can use a private template when you have read access. That is a separate option
+from the PathMX command. The public Starter plus a private working course is the
+simplest PathMX setup today.
 
 ---
 
-## 5. Try one small agent request
+## Let the repository guide you
 
-While the Player is running, ask the agent:
+From the new repository, start Codex or Claude Code and say:
 
-> Compare Week 1 with the course brief. Tell me what students practice, what
-> evidence they produce, and whether any learner step still assumes a terminal,
-> GitHub, or AI. Then give me the three most important questions I should
-> resolve before teaching it. Do not edit files.
+> Onboard me and lead the short PathMX authoring lab.
 
-This is the kind of bounded course-maintenance work the repository is designed
-to support. The agent may prepare evidence and recommendations; the instructor
-still owns curriculum, policy, feedback, and grades.
+The agent will verify the pinned tools, run the Player, explain the small
+vocabulary, and guide one local prototype. It will ask before connecting a
+draft or publishing a public link.
+
+You can edit the Markdown with any text editor. [Obsidian](https://obsidian.md/)
+is a friendly option: its Live Preview gives a more visual, formatted editing
+experience while preserving the plain Markdown files PathMX uses.
 
 ---
 
-## What feedback would be most useful?
+## Core commands
 
-After the trial, please send brief reactions to these questions:
+```sh
+bun run onboard     # verify this Starter
+bun run play:open   # open the local course website
+bun run check       # check links, examples, and the learner graph
+```
 
-1. Where did setup feel uncertain or more technical than it needed to be?
-2. Did the agent give you a useful tour, or too much repository detail?
-3. Could you tell what was ready to teach versus still only mapped?
-4. Would the Thonny-first, no-AI foundations phase fit how you prefer to teach
-   an introductory course?
-5. Does the later Codespaces/Git project transition feel early, late, or about
-   right?
-6. What would you need before feeling comfortable adapting this for a term?
+Bun is the runtime and package manager used by the repository, similar to
+using Node.js and npm together. Students do not need Bun to read the site.
 
-You can stop the Player with `Ctrl-C` in the terminal where it is running. The
-entire trial lives in the `csc-121-trial` folder; no remote course or student
-data was created.
+---
+
+## Support
+
+This Starter and PathMX are intentionally evolving during the lab period. If
+anything is unclear or gets in the way, reach out to Mark. He can help with
+installation, authoring, Player behavior, publishing, or adapting the workflow
+to the course you actually want to teach.

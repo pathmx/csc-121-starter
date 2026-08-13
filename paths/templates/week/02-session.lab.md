@@ -1,36 +1,32 @@
 ---
 type: lab
-status: draft
+status: template
 ---
 
-# [Lab title]
+# Lab: [supported practice]
 
-## Setup
+Setup: [tools, files, time, and permitted help].
 
-[For Unit 1: Thonny, file, and expected baseline result. For later projects:
-repository, Codespace, command, and expected baseline result.]
+---
 
 ## Supported attempt
 
-[Guided practice that prepares students for the project.]
+[Short steps with useful checkpoints.]
 
-## Checkpoint
-
-[Runnable behavior and a saved checkpoint. Add a descriptive commit only after
-Git has been taught.]
+---
 
 ## Independent challenge
 
-[Transfer within the week's capability.]
+[A related task that requires a small transfer.]
 
-## Recovery
+---
 
-[Staged hints, smaller input, or known failure guidance.]
+## If you get stuck
+
+[Specific recovery steps and how to ask for help.]
+
+---
 
 ## Finish
 
-- [ ] Run the final behavior.
-- [ ] Save the exact required file.
-- [ ] Submit through the current unit's stated channel.
-- [ ] For repository projects, commit, push, and verify the remote revision.
-- [ ] Prepare to explain one decision.
+[What to save, submit, demonstrate, or explain.]

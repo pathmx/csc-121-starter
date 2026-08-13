@@ -1,132 +1,136 @@
-# CSC-121 course starter
+# CSC-121 PathMX Starter
 
-This is a reusable baseline for an introduction to programming with Python.
-PathMX provides a calm course website for guided lessons, labs, projects, and
-references. Students begin with Thonny and ordinary Python files; GitHub,
-Codespaces, and agent-assisted project workflows arrive only after they have
-built basic programming fluency.
+This is a small, adaptable starting point for a CSC-121 course website. It is
+not a finished semester and it does not prescribe one teaching style.
 
-The Starter distills the stable course flow from three previous CSC-121
-offerings without carrying forward student records, term-specific links, or
-custom grading machinery.
+The Starter gives an instructor:
 
-The complete 15-week journey is mapped. Weeks 1 and 2 are the pilot-ready
-teaching slice; later weeks name the capability, practice, and evidence an
-instructor should prepare. Treat those mapped weeks as an adaptation plan, not
-as finished lessons.
+- one working PathMX course home;
+- one complete example week with a lesson, lab, assignment, and self-check;
+- an agent-guided introduction to curriculum as code;
+- reusable workflows for prototyping new teaching material; and
+- a simple local preview and public Share path.
 
-## Start here
+Replace, rearrange, or remove the example content as your own course takes
+shape.
 
-For a guided instructor setup, open a terminal in this repository and run one
-of these:
+## Start with the agent-guided lab
+
+Open a terminal in this repository and run either:
 
 ```sh
-codex "Onboard me as the CSC-121 instructor."
-claude "Onboard me as the CSC-121 instructor."
+codex "Onboard me and lead the short PathMX authoring lab."
+claude "Onboard me and lead the short PathMX authoring lab."
 ```
 
-The agent will check the workspace, run the course verification, start Player,
-show the learner experience, explain what is ready, and guide one setup choice
-at a time. See [Start here, instructor](./INSTRUCTOR-START.md) for the complete
-contract and manual fallback.
+The repository agent will check the workspace, start the PathMX Player, explain
+the core ideas, show how one Markdown Source becomes part of the course site,
+and offer one small edit or prototype. It will not publish or restructure the
+course without asking.
 
-Without an agent:
+See [Start here, instructor](./INSTRUCTOR-START.md) for the manual fallback.
 
-1. Install [Bun](https://bun.sh/) and clone this repository.
-2. Run the verified setup:
+## What PathMX contributes
 
-   ```sh
-   bun install --frozen-lockfile
-   bun run onboard
-   bun run play:open
-   ```
+PathMX treats curriculum as a collection of ordinary Markdown files:
 
-3. Read [the course brief](./paths/author/course-brief.guide.md).
-4. Complete [the semester setup checklist](./paths/author/semester-setup.guide.md).
-5. Adapt the bracketed course details in
-   [the syllabus template](./paths/course/syllabus.guide.md).
+- the files stay readable and portable outside PathMX;
+- links between files create a navigable course graph;
+- filename hints distinguish paths, lessons, labs, projects, and guides;
+- the Player supports both free reading and a guided step-by-step Play mode;
+- Git can record why curriculum changed; and
+- repository-aware agents can inspect the same curriculum, prototype material,
+  check alignment, and prepare a reviewable preview.
 
-The learner home is `paths/index.path.md`. Instructor-only material is under
-`paths/author/` and is deliberately not linked into the learner graph.
+PathMX is still a work in progress. This Starter pins the version it has
+actually verified, keeps the LMS as the authority for official records, and
+avoids making experimental features necessary for the course to function.
 
-## What is ready
+## A note about Bun
 
-- **Mapped:** audience, course promise, outcomes, 15-week sequence, evidence,
-  staged tool progression, paper exams, and final performance.
-- **Pilot-ready:** Weeks 1 and 2, including lessons, guided labs, independent
-  applications, self-checks, Thonny instructions, and downloadable Python
-  files.
-- **Needs instructor adaptation:** term dates, institutional policies,
-  early submission method, later GitHub project workflow, later-week lesson
-  details, exam prompts, and deployment credentials.
+[Bun](https://bun.sh/docs) is the small command-line runtime and package manager
+used to install and run PathMX. In this repository:
+
+- `bun install --frozen-lockfile` installs the verified PathMX version;
+- `bun run play:open` opens the local course website;
+- `bun run check` checks links, example files, and the built learner graph; and
+- `bun run share:course` updates a public course snapshot when Share access is
+  configured.
+
+Students do not need Bun to visit a published course site.
+
+## Choose any Markdown editor
+
+PathMX Sources are plain `.md` files. Use a code editor, an ordinary text
+editor, or a Markdown-focused tool. [Obsidian](https://obsidian.md/) is a good
+option for instructors who prefer a more visual writing experience: open this
+repository as a vault and use **Live Preview** to see formatted text while
+editing. The local `.obsidian/` settings folder is ignored by Git.
+
+Use PathMX Player for the final learner-facing preview because it shows the
+actual navigation and Play experience that students receive.
+
+## Prototype teaching material
+
+The repository-owned `prototype-course-material` skill supports requests such
+as:
+
+> Prototype a 45-minute lesson that introduces `while` loops to students who
+> already understand conditionals. Keep it in drafts and show me the Player
+> route.
+
+> Turn that lesson into a supported lab and an independent assignment. Show
+> how each activity prepares students for the next one.
+
+> Review this draft week for learning alignment, learner friction, and PathMX
+> behavior. Do not publish it yet.
+
+The agent drafts new material under `paths/drafts/` by default, outside the
+published learner graph. The instructor reviews it before linking or sharing
+it.
+
+## Public template, private working course
+
+The canonical Starter remains public because PathMX `0.3.0` only initializes
+public GitHub Template repositories in the `pathmx` organization. The command
+does not use local Git credentials to read a private template:
+
+```sh
+bunx @fellowhumans/pathmx init my-csc-121 \
+  --template csc-121-starter
+```
+
+After initialization, the instructor can put `my-csc-121` in a new private
+GitHub repository. The public Starter contains no student records, credentials,
+private course links, or term-specific data.
+
+GitHub's own **Use this template** flow can use a private template when the
+instructor has read access, but that is separate from the current PathMX
+template flag. Keeping the reusable Starter public and the working course
+private gives the simplest PathMX onboarding path.
 
 ## Repository map
 
-- `paths/` — learner curriculum, references, and instructor guides.
-- `assignment-templates/` — sanitized Python starter folders for early
-  download and later project repositories.
-- `operations/` — later-course GitHub options, deployment, and instructor
-  agent workflows.
-- `.agents/skills/` — official PathMX skills plus the course-owned instructor
-  onboarding skill.
-- `INSTRUCTOR-START.md` — one-command Codex or Claude Code onboarding.
-- `.github/workflows/` — clean verification and an explicit manual deploy.
-- `scripts/check.ts` — repository hygiene plus a clean PathMX build check.
+- `paths/index.path.md` — the intentionally small learner course home.
+- `paths/example-week/` — one complete example to adapt or replace.
+- `paths/author/` — the PathMX overview, authoring lab, and instructor notes.
+- `paths/templates/week/` — lightweight patterns used by the authoring agent.
+- `starter-files/example-week/` — two runnable Python starter files.
+- `.agents/skills/` — official PathMX skills plus repository-owned onboarding
+  and material-prototyping workflows.
+- `operations/` — agent use, later project tools, and public sharing.
 
-## Course shape
+## Support and privacy
 
-The default calendar uses 15 weeks:
+During the lab period, Haorui can contact Mark whenever setup, authoring, or
+publishing feels unclear. PathMX is evolving, and questions or rough edges are
+useful feedback rather than something the instructor needs to solve alone.
 
-- Weeks 1–5: programming fundamentals in Thonny, manual code practice, and a
-  pencil-and-paper transfer exam.
-- Weeks 6–10: a supported transition to Codespaces and Git, followed by an
-  applied data project and a second pencil-and-paper exam.
-- Weeks 11–15: a proposed, tested, documented, and presented final project.
-
-Each ordinary week follows the same rhythm:
-
-1. model a capability in lecture;
-2. practice it with support in lab;
-3. apply it independently in a small application or project;
-4. save, submit, explain, and use feedback.
-
-In the project phase, Git commits become part of that loop. They are not an
-entry requirement for learning the first Python concepts.
-
-## Student tools and assignment distribution
-
-For the foundations unit, the simplest baseline is Thonny plus files delivered
-and collected through the institution's LMS. Students should not need a
-GitHub account, terminal workflow, or coding agent to complete the first unit.
-
-For applied and final projects, introduce VS Code in GitHub Codespaces and a
-small Git workflow as course content. [GitHub Classroom is being
-decommissioned](https://github.blog/changelog/2026-05-26-github-classroom-sign-ups-are-no-longer-available/)
-on August 28, 2026, so the Starter does not depend on it. Classroom 50 or plain
-GitHub can be piloted later, after students are ready for repository-based
-projects. See [Classroom 50 setup](./operations/classroom50.guide.md) and
-[plain GitHub fallback](./operations/plain-github-fallback.guide.md).
-
-## PathMX and deployment
-
-The repository pins PathMX `0.3.0` in both `package.json` and `bun.lock`.
-Preview locally before publishing. The included GitHub workflow verifies every
-pull request and push; deployment is a separate manual action requiring a
-protected `production` environment and Cloudflare credentials.
-
-PathMX is installed locally by `bun install`; instructors do not need a global
-CLI. See [PathMX and deployment](./operations/deployment.guide.md) and
-[agent workflows](./operations/agent-workflows.guide.md).
-
-## Privacy boundary
-
-Never add real rosters, learner profiles, submissions, grades, emails,
-credentials, or downloaded student repositories to this Starter. Create a
-private term repository or private operational store for those records.
+Never commit real rosters, learner profiles, submissions, grades, email
+addresses, credentials, or private feedback to this public Starter. Put those
+records only in institution-approved systems or a protected term workspace.
 
 ## License
 
-The course Sources, assignment templates, documentation, and supporting code
-are available under the [MIT License](./LICENSE). You may adapt the Starter for
-another course or institution while preserving the copyright and license
-notice.
+The curriculum Sources, templates, documentation, and supporting code are
+available under the [MIT License](./LICENSE).

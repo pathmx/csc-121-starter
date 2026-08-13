@@ -1,6 +1,6 @@
 {
   "name": "csc-121-starter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "pathmxCompatibility": {
@@ -14,9 +14,7 @@
     "play:open": "pathmx play --print-url --open",
     "build": "pathmx build --clean",
     "check": "bun run scripts/check.ts",
-    "publish:stage": "pathmx publish --clean",
-    "publish:dry-run": "pathmx publish --clean --dry-run",
-    "publish:deploy": "pathmx publish --deploy"
+    "share:course": "pathmx share paths/index.path.md"
   },
   "dependencies": {
     "@fellowhumans/pathmx": "0.3.0"

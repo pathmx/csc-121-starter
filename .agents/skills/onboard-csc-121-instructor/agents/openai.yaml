@@ -1,4 +1,4 @@
 interface:
   display_name: "Onboard CSC-121 Instructor"
-  short_description: "Guided setup and first course walkthrough"
-  default_prompt: "Use $onboard-csc-121-instructor to set up this course workspace and walk me through the first teaching decisions."
+  short_description: "Tour PathMX and try its authoring loop"
+  default_prompt: "Use $onboard-csc-121-instructor to onboard me and lead the short PathMX authoring lab."

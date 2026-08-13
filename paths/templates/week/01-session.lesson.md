@@ -1,28 +1,26 @@
 ---
 type: lesson
-status: draft
+status: template
 ---
 
-# [Lesson title]
+# Lesson: [capability]
 
-[Why this capability matters in a concrete program.]
+[Orient the learner: what will this help them do?]
 
-## Worked example
+---
 
-[Small complete example, prediction, run, and explanation.]
+## See it
 
-## Supported attempt
+[One complete, concrete example with a prediction prompt.]
 
-[A smaller or partly completed problem with staged help.]
+---
 
-## Independent attempt
+## Try it
 
-[A varied problem that uses the same capability without copying the example.]
+[One guided attempt, then one small variation.]
+
+---
 
 ## Check
 
-[Questions or observable behavior students use immediately.]
-
-## Next
-
-[Exact lab link and preparation.]
+[A question that reveals whether the learner can explain or predict the idea.]

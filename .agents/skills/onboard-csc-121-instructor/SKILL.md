@@ -1,115 +1,113 @@
 ---
 name: onboard-csc-121-instructor
-description: Guide a new or returning instructor through the CSC-121 Starter, local prerequisites, repository verification, PathMX Player launch, course-readiness boundaries, and the first term decisions. Use when an instructor opens this repository and says start, onboard me, show me around, help me set up, what should I do first, run the course, or otherwise begins a first or resumed course-setup session.
+description: Guide a new or returning instructor through this small CSC-121 PathMX Starter, its curriculum-as-code model, local verification, Player, first authoring lab, and next action. Use when an instructor says start, onboard me, show me PathMX, run the course, help me set up, what should I do first, continue setup, or otherwise begins or resumes an instructor session in this repository.
 ---
 
 # Onboard a CSC-121 instructor
 
-Lead the session. Do not make the instructor discover the repository structure
-or know which commands to request.
+Lead a brief working session. Do not make the instructor discover repository
+structure, request commands by name, or make semester-wide decisions before
+seeing the core authoring loop.
 
-## Establish the boundary
+## Set the first-session boundary
 
-Tell the instructor that this pass will verify the local workspace, open the
-learner course in Player, explain what is and is not ready, and identify one
-next decision. State that it will not deploy, create remote repositories,
-change course content, or handle learner data without explicit approval.
+Explain that the session will:
+
+1. verify the small workspace;
+2. open the learner course in Player;
+3. connect one Markdown Source to its rendered page;
+4. introduce Sources, links, Blocks, View, and Play; and
+5. offer one harmless edit or unlinked prototype.
+
+Do not deploy, create remote repositories, restructure the course, collect
+private term information, or publish a Share without explicit approval.
 
 Read only these files initially:
 
 1. `README.md`
-2. `paths/author/course-brief.guide.md`
-3. `paths/author/semester-setup.guide.md`
+2. `paths/author/pathmx-overview.guide.md`
+3. `paths/author/authoring-lab.path.md`
 4. `paths/index.path.md`
 
-Inspect `git status --short` before running setup. Preserve all existing work.
+Inspect `git status --short` when Git is available. Preserve all existing work.
 
 ## Verify the workspace
 
-Check for Bun first. If it is absent, stop the technical setup and give the
-official Bun installation link; do not run a remote installation script.
+Check for Bun. If it is absent, explain that Bun is the runtime and package
+manager that runs PathMX, give the official installation page, and continue the
+read-only orientation. Do not run a remote installation script.
 
 When Bun is available:
 
 1. Run `bun install --frozen-lockfile`.
 2. Run `bun run onboard`.
-3. Summarize the result in plain language: tool readiness, exact PathMX
-   version, repository state, assignment fixtures, and learner graph size.
+3. Summarize tool readiness, the pinned PathMX version, the 11-Source learner
+   graph, and any concrete failure in plain language.
 
-If verification fails, diagnose the concrete failure. Do not rewrite course
-content or upgrade dependencies merely to make onboarding green. Continue the
-read-only course orientation when it remains safe.
+Git and a separate system Python installation are optional for this lab. Thonny
+can provide the early student Python experience.
 
 ## Start and verify Player
 
-Reuse a healthy Player only after confirming it belongs to this checkout.
-Otherwise start the repository's long-running `bun run play:open` command and
-keep it running for the instructor. If port 3000 belongs to another process,
-choose a free port with the pinned CLI rather than stopping the process.
+Reuse an existing Player only after confirming it belongs to this checkout.
+Otherwise start the long-running `bun run play:open` command and keep it running
+for the instructor. Do not stop an unknown process to take its port.
 
-Capture the printed launch URL. Open it with an integrated browser when one is
-available; otherwise give the instructor a clickable local URL. Verify that:
+Use the printed local URL. Open it with an integrated browser when available;
+otherwise give the instructor the clickable URL. Verify that the page identifies
+`CSC-121 Course Site` and that the example-week link resolves. A startup banner
+alone is not verification.
 
-- the home route identifies `CSC-121: Introduction to Programming`;
-- the Week 1 link resolves; and
-- the running page comes from this checkout.
+## Give the small tour
 
-Do not treat a server banner as verification. Report the verified course-home
-URL and how the instructor can stop the server later.
+Explain the repository through the visible example:
 
-## Give the short tour
+- `paths/index.path.md` is the one learner Root.
+- Linked Markdown Sources become the course journey.
+- `---` separates Blocks that the Player can pace in Play mode.
+- View mode supports normal reading; Play mode supports focused progression.
+- Filename roles such as `.lesson.md`, `.lab.md`, and `.path.md` communicate
+  teaching intent.
+- Instructor notes, templates, and unlinked drafts remain outside learner
+  navigation.
+- Bun runs PathMX; students do not need Bun to visit a shared course.
+- Obsidian Live Preview is an approachable Markdown editor; VS Code can become
+  useful later when Git and project code matter.
 
-Orient the instructor to four things, without dumping the whole repository:
+Frame PathMX as a work-in-progress framework that can adapt to many teaching
+models. Keep the LMS authoritative for grades, rosters, submissions, formal
+policy, and protected records.
 
-1. The learner sees one course Root and a 15-week journey.
-2. Weeks 1 and 2 are pilot-ready; Weeks 3–15 are concrete maps that still need
-   instructor preparation.
-3. The first unit uses the PathMX course website, Thonny, LMS file submission,
-   a no-AI policy, and paper exams. Codespaces, Git, and optional agent-assisted
-   project work arrive later.
-4. `paths/author/` owns the course brief, setup, facilitation, and readiness
-   guidance outside learner navigation.
-5. `assignment-templates/` and `operations/` keep assignment distribution,
-   deployment, and agents replaceable rather than embedded in the curriculum.
+## Lead one authoring action
 
-Open or link the course home, Week 1, the course brief, and semester checklist.
-Use the `teach` skill for curriculum decisions and the `pathmx` skill for
-Source or Player work later in the session.
+Ask whether the instructor wants to tour read-only, make one small course-home
+edit, or prototype one unlinked activity. Recommend the course-home edit for a
+first hands-on pass.
 
-## Move one decision at a time
+Ask before editing. For a prototype, use `prototype-course-material` and leave
+new material under `paths/drafts/`. Show the instructor the resulting Source
+and Player behavior. Do not link it into the learner Root without approval.
 
-Ask first:
+## Explain the safe repository and Share path
 
-> Are we touring the Starter, or configuring a private copy for a specific
-> term?
+Explain that the current PathMX template command initializes from a public
+template in the `pathmx` organization. The reusable Starter stays public and
+contains no student or private term information. The instructor can then push
+the initialized working course into a separate private repository.
 
-Do not collect every setup answer at once. If this is a tour, remain read-only
-and demonstrate the first learner journey. If this is a term setup, confirm
-that the repository is an appropriate private term copy before writing dates,
-contact details, course URLs, or institutional policy.
-
-Then guide these decisions in order, one short question at a time:
-
-1. term, first meeting, and weekly meeting pattern;
-2. Thonny installation and the early LMS file-submission loop;
-3. no-AI foundations language and pencil-and-paper exam conditions;
-4. institution-approved syllabus, accessibility, integrity, and LMS details;
-5. the next release slice, normally Weeks 3–5;
-6. later Codespaces and GitHub project pilot;
-7. deployment only after the local teaching loop is proven.
-
-Recommend a choice when the repository provides a baseline, explain its
-tradeoff briefly, and let the instructor decide. Ask before editing files.
+Explain local preview separately from public Share. Before any Share, read
+`operations/sharing.guide.md`, confirm explicit approval, protect the token,
+and verify the resulting public page.
 
 ## Close or resume
 
-At a stopping point, give a compact status with:
+End with:
 
-- verified Player URL and whether the server is still running;
+- the verified Player URL and whether its process is still running;
 - checks that passed or failed;
-- ready scope and remaining preparation scope;
-- decisions made this session;
-- the single next action;
-- the resume phrase: `Continue instructor setup`.
+- the one edit or prototype made, if any;
+- the next useful action; and
+- the resume phrase: `Continue CSC-121 authoring from my current repository.`
 
-Do not claim the course is release-ready while mapped weeks remain unfinished.
+Remind the instructor that Mark is available during the lab period for setup,
+authoring, publishing, or adaptation support.

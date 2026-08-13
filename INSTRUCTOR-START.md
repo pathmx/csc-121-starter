@@ -1,36 +1,36 @@
 # Start here, instructor
 
-The fastest path is to start an agent in this repository with one onboarding
-request. With either agent installed and signed in, open the repository in a
-terminal and use one of these commands:
+The shortest useful introduction is an agent-guided authoring lab. From this
+repository, run either:
 
 ```sh
-codex "Onboard me as the CSC-121 instructor."
+codex "Onboard me and lead the short PathMX authoring lab."
 ```
 
 or:
 
 ```sh
-claude "Onboard me as the CSC-121 instructor."
+claude "Onboard me and lead the short PathMX authoring lab."
 ```
 
-If you need an agent first, use the official
-[Codex CLI setup](https://help.openai.com/en/articles/11096431) or
-[Claude Code setup](https://docs.anthropic.com/en/docs/claude-code/getting-started).
+The agent should:
 
-The agent should inspect the repository without changing course content, check
-the local tools, install the locked dependencies when needed, run the verified
-course check, start PathMX Player, open the learner course website, explain what
-is ready, and ask whether you want a tour or a specific-term setup. The tour
-should make the course's staged tool model explicit: Thonny and manual practice
-first; Codespaces, Git, and optional agent-supported projects later.
+1. explain what Bun and PathMX do in plain language;
+2. install the locked dependencies if needed;
+3. run the repository check;
+4. open and verify the learner course in PathMX Player;
+5. connect one Markdown Source to what you see in the Player;
+6. introduce Sources, links, Blocks, Beats, View mode, and Play mode;
+7. offer one small edit or one prototype request; and
+8. explain preview and Share without publishing unless you approve it.
 
-It will not publish the course, create GitHub repositories, change grades, or
-write learner data without your explicit approval.
+It should not ask you to configure a semester, GitHub organization, LMS,
+grading system, or student repository before you have seen the basic authoring
+loop.
 
 ## Manual fallback
 
-If an agent is unavailable, run:
+[Install Bun](https://bun.sh/docs/installation), then run:
 
 ```sh
 bun install --frozen-lockfile
@@ -38,6 +38,15 @@ bun run onboard
 bun run play:open
 ```
 
-Then follow the
-[semester setup checklist](./paths/author/semester-setup.guide.md). The course
-home is `paths/index.path.md`.
+Open `paths/index.path.md` in any text or Markdown editor while the Player is
+running. Change one sentence, save it, and reload or wait for the Player to
+update. Then read the
+[PathMX overview](./paths/author/pathmx-overview.guide.md) and
+[authoring lab](./paths/author/authoring-lab.path.md).
+
+Obsidian users can open the repository folder as a vault and use Live Preview.
+Keep the PathMX Player beside it to review the actual student experience.
+
+During the lab period, contact Mark whenever setup or publishing becomes a
+barrier. PathMX is still evolving and this Starter is meant to change with your
+teaching preferences.

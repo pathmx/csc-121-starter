@@ -1,49 +1,35 @@
-# Course policies
+---
+status: example
+---
 
-Your instructor will publish the official institution-specific policies in the
-syllabus and LMS. These learning policies explain the common baseline.
+# Example foundations policy
 
-## Authorship and understanding
+> This is sample language for an instructor to adapt and reconcile with
+> institutional policy before publishing it as an official course rule.
 
-You must both author and understand the work you submit. You may be asked to
-run, modify, or explain your program. Code you cannot explain is not evidence
-of your learning, regardless of who or what produced it.
+## Authorship and manual practice
 
-## Collaboration
-
-Discussing concepts, comparing approaches, and helping another person diagnose
-an error are encouraged unless an assessment says otherwise. Do not copy
-another learner's solution or give someone a finished solution to an
-independent assignment.
-
-When an external resource materially changes your solution, record what you
-used and how it helped.
+You must author and understand the work you submit. Early practice may ask you
+to type examples manually because the loop of reading, typing, predicting,
+running, and correcting code helps common program shapes become familiar.
 
 ## AI tools
 
-The course starts with a no-AI policy:
+This example course begins with no student use of generative AI. Later
+permissions, if any, must be announced for a specific unit or assignment. If
+permission is not stated, assume AI is not permitted.
 
-- **Unit 1:** do not use generative AI for lessons, labs, projects, or graded
-  work. Type, trace, run, and revise the code yourself.
-- **Unit 2:** AI remains unavailable unless your instructor explicitly permits
-  a specific bounded use after the related foundation has been assessed.
-- **Unit 3:** your instructor may permit coding agents within the published
-  final-project policy. You remain responsible for the design, central logic,
-  tests, and explanation.
-
-If permission is not stated, assume AI is not permitted. Read [responsible
-agent use](../resources/agent-use.policy.md) before any permitted use.
+Instructor use of an agent to prepare curriculum or draft feedback does not
+change student permissions or transfer grading authority to the agent.
 
 ## Assessments
 
-Practice and projects may permit collaboration or bounded assistance. Unit
-transfer exams are completed with pencil and paper under the conditions stated
-by the instructor. They assess reading, tracing, writing, debugging, and
-explanation without an editor, internet, or AI. The instructor will state what
-notes, if any, are permitted.
+This example uses pencil-and-paper checks for independent code reading,
+tracing, writing, debugging, and explanation. The instructor must state what
+notes and collaboration, if any, are permitted.
 
-## Late work and attendance
+## Official policy
 
-The syllabus and institution policy are authoritative. Communicate early when
-a circumstance affects your participation or deadline. Do not put medical,
-accommodation, or other private details in a public repository.
+The syllabus, LMS, and current institutional policy remain authoritative for
+academic integrity, accessibility, accommodations, attendance, deadlines, and
+private records.
