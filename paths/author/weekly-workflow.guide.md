@@ -15,7 +15,8 @@ Use this loop for a lecture, lab, assignment, or complete teaching week.
    and accessibility.
 5. Build the named draft with `pathmx build`, then preview it in Player.
 6. Link the Source into the course only after instructor approval.
-7. Share the reviewed course snapshot when learners need it.
+7. Publish the reviewed static course site when learners need it; use Share
+   only when a temporary review link is useful.
 8. After teaching, record the smallest useful revision for next time.
 
 The agent workflow in this repository can lead these steps. Try:

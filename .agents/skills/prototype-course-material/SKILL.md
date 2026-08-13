@@ -94,11 +94,14 @@ Ask before linking a draft into learner navigation. After approval:
 3. inspect the course in Player; and
 4. report the learner-facing route.
 
-Public Share is a separate external mutation. Ask explicitly before running it.
-Read `operations/sharing.guide.md`, ensure the ignored environment has
+Public publishing is a separate external mutation. Ask explicitly before
+running it and read `operations/sharing.guide.md`. For the durable course site,
+stage with `pathmx publish`, validate with `pathmx publish --dry-run`, then run
+`pathmx publish --deploy` only after approval and verify the returned public
+page. For an optional Share review link, ensure the ignored environment has
 `PATHMX_SHARE_TOKEN`, never print the token, run
-`pathmx share paths/index.path.md`, and
-verify the returned public page. The instructor remains the final publisher.
+`pathmx share paths/index.path.md`, and verify the returned page. The instructor
+remains the final publisher.
 
 ## Close the authoring pass
 

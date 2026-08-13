@@ -27,7 +27,7 @@ pathmx play --open
 ```
 
 If `pathmx` is not installed, first install Bun and run
-`bun add --global @fellowhumans/pathmx@0.3.0`. Leave the last command running.
+`bun add --global @fellowhumans/pathmx@latest`. Leave the last command running.
 It prints and opens a local URL. Confirm that the Player shows **CSC-121 Course
 Site** and an example week.
 
@@ -75,9 +75,9 @@ An unlinked file is a private draft. It enters the learner journey only when a
 ready Source links to it. Ask the agent to connect it only after you approve the
 content.
 
-Local Player changes stay on your computer. A public `pathmx share` link is a
-separate, explicit publishing step. Read `operations/sharing.guide.md` before
-doing that.
+Local Player changes stay on your computer. A durable static course deployment
+and an optional public Share link are separate, explicit steps. Read
+`operations/sharing.guide.md` before doing either one.
 
 ---
 

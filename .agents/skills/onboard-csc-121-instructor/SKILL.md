@@ -20,7 +20,7 @@ Explain that the session will:
 5. offer one harmless edit or unlinked prototype.
 
 Do not deploy, create remote repositories, restructure the course, collect
-private term information, or publish a Share without explicit approval.
+private term information, or publish a public link without explicit approval.
 
 Read only these files initially:
 
@@ -42,11 +42,10 @@ When Bun exists but `pathmx` does not, ask before installing software. With
 approval, run:
 
 ```sh
-bun add --global @fellowhumans/pathmx@0.3.0
+bun add --global @fellowhumans/pathmx@latest
 ```
 
-This installs the CLI release verified for this lab. When `pathmx` is
-available:
+This installs the current CLI release. When `pathmx` is available:
 
 1. Run `pathmx --version`.
 2. Build `paths/index.path.md` with `pathmx build` into a fresh temporary output
@@ -105,16 +104,25 @@ Ask before editing. For a prototype, use `prototype-course-material` and leave
 new material under `paths/drafts/`. Show the instructor the resulting Source
 and Player behavior. Do not link it into the learner Root without approval.
 
-## Explain the safe repository and Share path
+## Explain the safe repository and publishing path
 
 Explain that the current PathMX template command initializes from a public
 template in the `pathmx` organization. The reusable Starter stays public and
 contains no student or private term information. The instructor can then push
 the initialized working course into a separate private repository.
 
-Explain local preview separately from public Share. Before any Share, read
-`operations/sharing.guide.md`, confirm explicit approval, protect the token,
-and verify the resulting public page.
+Explain three separate paths: local Player preview, a durable static course
+site, and an optional public Share review link. Present Cloudflare static
+publishing as the supported course-site path. Before any public deployment or
+Share, read `operations/sharing.guide.md`, confirm explicit approval, protect
+credentials or tokens, and verify the resulting public page. Do not require
+Share as part of onboarding.
+
+If the instructor asks to configure Cloudflare, explain the provider name,
+one-time account authentication, generated `workers.dev` URL, and the
+difference between local staging, `--dry-run`, and `--deploy` before making
+changes. The included GitHub workflow checks the course only; automatic
+deployment is a later, explicit setup step.
 
 ## Close or resume
 

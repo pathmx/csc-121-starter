@@ -17,6 +17,6 @@ jobs:
         with:
           bun-version: latest
       - name: Install PathMX CLI
-        run: bun add --global @fellowhumans/pathmx@0.3.0
+        run: bun add --global @fellowhumans/pathmx@0.4.0
       - name: Build the learner course
         run: pathmx build paths/index.path.md -o .pathmx-check --clean

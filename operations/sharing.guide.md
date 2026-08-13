@@ -3,9 +3,10 @@ type: guide
 status: starter
 ---
 
-# Previewing and sharing the course
+# Previewing and publishing the course
 
-Local preview and public sharing are separate decisions.
+Local preview, the durable course website, and a temporary review link are
+three separate things.
 
 ## Local Player
 
@@ -17,11 +18,61 @@ This builds and serves the course on your computer. It is the right place to
 review drafts and experiments. Stop it with `Ctrl-C` in the terminal that is
 running the command.
 
-## Public Share
+## Recommended course website: Cloudflare
+
+PathMX builds a static learner site. The current supported publishing path is
+Cloudflare Workers Static Assets. It gives the course a durable public URL and
+can later use a custom domain. Students only need a web browser.
+
+This Starter already contains the following provider settings in
+`paths/config/index.config.md`:
+
+```yaml
+publish:
+  provider: cloudflare
+  options:
+    projectName: csc-121-course
+```
+
+Change `projectName` to a short name for the real course before the first
+deployment. Then use the direct PathMX commands:
+
+```sh
+pathmx publish             # build and stage the site locally
+pathmx publish --dry-run   # let Cloudflare validate the staged deployment
+pathmx publish --deploy    # publish or update the public site
+```
+
+The first two commands are safe preparation. `--deploy` changes public
+Cloudflare state, so the instructor should approve it explicitly. The first
+deployment can use its `workers.dev` address; add a custom domain only after
+that site has been reviewed.
+
+Cloudflare may ask for a one-time browser login before validation or
+deployment. Ask the repository agent to guide that setup if the account choice
+or prompt is unclear.
+
+This Starter checks the course after each push, but intentionally does not
+deploy it automatically. When that becomes useful, ask the repository agent:
+
+> Help me add a reviewed `main`-branch deployment to Cloudflare. Explain the
+> GitHub workflow and secrets before changing anything.
+
+The setup should use a GitHub `production` environment with
+`CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` secrets. Never commit those
+values.
+
+GitHub Pages is also a static host, but PathMX does not currently provide a
+first-class GitHub Pages publisher. Cloudflare is the simpler supported path
+for this Starter. Revisit Pages only if the course needs it and the deployment
+workflow has been tested end to end.
+
+## Optional review link: PathMX Share
 
 `pathmx share` creates a hosted, read-only snapshot. Treat its URL as public:
 remove private institutional information, student data, unpublished answers,
-and credentials before sharing.
+and credentials before sharing. It is useful for a quick review or lab-period
+prototype; it does not need to be the course website.
 
 During the lab period, ask Mark for PathMX Share access and support. Put the
 provided token in an ignored `.env` file:
@@ -41,7 +92,7 @@ and every link you plan to send. Sharing again updates the saved Share when the
 local receipt is present under `.pathmx-state/`.
 
 PathMX Share is a work-in-progress lab service, not the authoritative home for
-grades, rosters, submissions, or protected course records.
+the course, grades, rosters, submissions, or protected course records.
 
 ## Public Starter, private course
 

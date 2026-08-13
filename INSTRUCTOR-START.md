@@ -22,7 +22,8 @@ The agent should:
 5. connect one Markdown Source to what you see in the Player;
 6. introduce Sources, links, Blocks, Beats, View mode, and Play mode;
 7. offer one small edit or one prototype request; and
-8. explain preview and Share without publishing unless you approve it.
+8. explain local preview, static publishing, and optional Share links without
+   publishing unless you approve it.
 
 It should not ask you to configure a semester, GitHub organization, LMS,
 grading system, or student repository before you have seen the basic authoring
@@ -33,7 +34,7 @@ loop.
 [Install Bun](https://bun.sh/docs/installation), then run:
 
 ```sh
-bun add --global @fellowhumans/pathmx@0.3.0
+bun add --global @fellowhumans/pathmx@latest
 pathmx --version
 pathmx build paths/index.path.md
 pathmx play --open

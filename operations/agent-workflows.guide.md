@@ -37,4 +37,4 @@ accuracy, pacing, policy, accessibility, student context, and final approval.
 Do not put grades, accommodations, private student work, credentials, or other
 protected data into prompts or repository files. Do not use an agent as the
 final grader. Ask before linking a draft into the learner course and before
-running `pathmx share`.
+running `pathmx publish --deploy` or `pathmx share`.

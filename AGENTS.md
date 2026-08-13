@@ -13,7 +13,7 @@ short authoring lab and keep the first session focused on:
 1. what curriculum as code makes possible;
 2. one Source and its Player page;
 3. one small edit or prototype; and
-4. local preview before public sharing.
+4. local preview before public publishing.
 
 Do not deploy, create remote repositories, restructure the course, or collect
 private term information during the tour without explicit approval.
@@ -30,7 +30,8 @@ the instructor approves its learning shape and learner-facing placement.
 1. Read `README.md`, `paths/author/course-brief.guide.md`, and the nearest
    relevant Source.
 2. Use the installed `teach` skill for shared-learning decisions.
-3. Use the installed `pathmx` skill for Markdown, graph, Player, and Share work.
+3. Use the installed `pathmx` skill for Markdown, graph, Player, publish, and
+   Share work.
 4. Inspect `git status --short` and preserve unrelated work.
 5. Build the changed learner Root or named draft directly with `pathmx build`
    before handoff.
@@ -50,9 +51,19 @@ the instructor approves its learning shape and learner-facing placement.
 
 ## Publishing and privacy
 
-- Local preview is always safe; public Share is an external mutation and needs
-  explicit instructor approval.
-- Never expose or print `PATHMX_SHARE_TOKEN`.
+- Local Player and a staged `pathmx publish` are safe review steps.
+- Present Cloudflare static publishing as the supported durable course-site
+  path. Treat GitHub Pages as a later custom deployment unless PathMX gains a
+  first-class provider.
+- `pathmx publish --deploy` and public Share are external mutations and need
+  explicit instructor approval. Share is optional and should not be required
+  during onboarding.
+- The included GitHub workflow verifies the course but does not deploy it. If
+  the instructor asks for automatic Cloudflare publishing, explain the
+  proposed workflow, GitHub `production` environment, and required secret
+  names before changing repository or cloud state.
+- Never expose or print `PATHMX_SHARE_TOKEN`, `CLOUDFLARE_API_TOKEN`, or other
+  deployment credentials.
 - Never commit rosters, submissions, grades, learner identities, credentials,
   private feedback, or downloaded student repositories.
 - Instructor agent use does not change student AI permissions.

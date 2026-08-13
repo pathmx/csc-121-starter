@@ -9,7 +9,7 @@ The Starter gives an instructor:
 - one complete example week with a lesson, lab, assignment, and self-check;
 - an agent-guided introduction to curriculum as code;
 - reusable workflows for prototyping new teaching material; and
-- a simple local preview and public Share path.
+- a simple local preview and static publishing path, with optional review links.
 
 Replace, rearrange, or remove the example content as your own course takes
 shape.
@@ -52,15 +52,16 @@ course to function.
 PathMX CLI distribution. Install Bun once, then install PathMX:
 
 ```sh
-bun add --global @fellowhumans/pathmx@0.3.0
+bun add --global @fellowhumans/pathmx@latest
 pathmx --version
 ```
 
 After that, the normal course commands are simply `pathmx init`,
-`pathmx play --open`, `pathmx build`, and `pathmx share`. You do not need to
-manage a Bun project or learn package scripts. The lab currently uses PathMX
-0.3.0 because that release is verified with its Share service. A future PathMX
-release may ship as a standalone executable and remove the Bun prerequisite.
+`pathmx play --open`, `pathmx build`, and `pathmx publish`. You do not need to
+manage a Bun project or learn package scripts. `pathmx share` is available when
+you want a temporary hosted review link, but it is not required to run or
+publish the course. A future PathMX release may ship as a standalone executable
+and remove the Bun prerequisite.
 
 Students do not need Bun to visit a published course site.
 
@@ -91,8 +92,8 @@ as:
 > behavior. Do not publish it yet.
 
 The agent drafts new material under `paths/drafts/` by default, outside the
-published learner graph. The instructor reviews it before linking or sharing
-it.
+published learner graph. The instructor reviews it before linking or
+publishing it.
 
 ## Public template, private working course
 
@@ -122,7 +123,8 @@ private gives the simplest PathMX onboarding path.
 - `starter-files/example-week/` — two runnable Python starter files.
 - `.agents/skills/` — official PathMX skills plus repository-owned onboarding
   and material-prototyping workflows.
-- `operations/` — agent use, later project tools, and public sharing.
+- `operations/` — agent use, later project tools, publishing, and optional
+  sharing.
 
 ## Support and privacy
 

@@ -79,8 +79,7 @@ Git and code in the same workspace.
 
 **Bun:** Bun is currently needed to install and run the PathMX CLI. Install Bun
 and then install PathMX once with
-`bun add --global @fellowhumans/pathmx@0.3.0`. This lab uses a verified CLI
-release rather than a repository package setup. After that, use direct commands
+`bun add --global @fellowhumans/pathmx@latest`. After that, use direct commands
 such as `pathmx play --open`; this repository has no Bun package setup or
 package scripts. Students do not need Bun merely to read a published course or
 write early Python in Thonny. PathMX may later ship as a standalone executable.
@@ -92,7 +91,9 @@ the first authoring lab.
 **Agent:** Codex or Claude Code can read the repository guidance, explain the
 structure, draft a small Source, run checks, and open the Player. It should not
 publish, handle student data, or make instructional decisions without the
-instructor's review.
+instructor's review. For the normal student site, PathMX can publish a static
+snapshot to Cloudflare. PathMX Share is an optional quick-review path, not a
+hosting requirement.
 
 If you get stuck during this lab period, reach out to Mark. PathMX is still
 evolving, and questions or rough edges are useful feedback.

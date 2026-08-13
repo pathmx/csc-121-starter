@@ -37,7 +37,7 @@ material. Git, VS Code, and Codespaces can arrive later for project-based work.
 Install [Bun](https://bun.sh/docs/installation), then run:
 
 ```sh
-bun add --global @fellowhumans/pathmx@0.3.0
+bun add --global @fellowhumans/pathmx@latest
 pathmx init csc-121 --template csc-121-starter
 cd csc-121
 ```
@@ -69,7 +69,7 @@ From the new repository, start Codex or Claude Code and say:
 
 The agent will verify the PathMX CLI, run the Player, explain the small
 vocabulary, and guide one local prototype. It will ask before connecting a
-draft or publishing a public link.
+draft, deploying a course website, or publishing a public review link.
 
 You can edit the Markdown with any text editor. [Obsidian](https://obsidian.md/)
 is a friendly option: its Live Preview gives a more visual, formatted editing
@@ -87,9 +87,12 @@ pathmx play --open                     # open the local course website
 
 Bun is currently the installation and runtime prerequisite for the PathMX CLI.
 Once the CLI is installed, use `pathmx` directly; the course repository has no
-Bun package setup. The lab currently uses PathMX 0.3.0 because it is verified
-with the Share service. Students do not need Bun to read the site. PathMX may
-later ship as a standalone executable.
+Bun package setup. Students do not need Bun to read the site. PathMX may later
+ship as a standalone executable.
+
+When the course is ready for students, `pathmx publish` can stage a static site
+and deploy it to Cloudflare. `pathmx share` is an optional way to create a quick
+hosted review link; Haorui does not need it for the normal course website.
 
 ---
 
